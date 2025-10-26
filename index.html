@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muhammad Umer Sajid | Embedded & Digital Design Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header role="banner">
+        <div class="profile-container">
+            <div class="profile-pic">
+                <img src="profile.jpg" alt="Muhammad Umer Sajid Profile Picture">
+            </div>
+            <div class="profile-info">
+                <h1>Muhammad Umer Sajid</h1>
+                <h2>Embedded & High-Speed Digital Design Engineer</h2>
+                <p>Final Year Electrical Engineering Student at NUST, specializing in Embedded Systems, IoT, and High-Speed Digital Design. Creating innovative solutions for complex engineering challenges.</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="about-container">
+            <h2>About Me</h2>
+            <p>I'm a dedicated Electrical Engineering student at the National University of Sciences and Technology (NUST), currently in my final year. My passion lies in embedded systems and high-speed digital design, where I combine theoretical knowledge with practical innovation.</p>
+            <p>Throughout my academic journey, I've specialized in embedded systems development, IoT solutions, and high-speed digital circuit design. I have extensive experience in PCB design, hardware development, and firmware programming, with a particular focus on medical devices and industrial applications.</p>
+        </div>
+        <div class="stats">
+            <div class="stat-item">
+                <p>10+</p>
+                <span>Projects Completed</span>
+            </div>
+            <div class="stat-item">
+                <p>3+</p>
+                <span>Years Experience</span>
+            </div>
+            <div class="stat-item">
+                <p>5+</p>
+                <span>Technologies Mastered</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Navigation -->
+    <nav class="footer-nav">
+        <a href="#about" class="footer-btn">About</a>
+        <a href="javascript:void(0);" class="footer-btn" id="projects-btn" onclick="showProjects()">Projects</a>
+        <a href="#skills" class="footer-btn">Skills</a>
+        <a href="#experience" class="footer-btn">Experience</a>
+        <a href="#achievements" class="footer-btn">Achievements</a>
+        <a href="#contact" class="footer-btn">Contact</a>
+    </nav>
+
+    <!-- Footer Social Links -->
+    <div class="footer-social">
+        <a href="mailto:sammirjamal928@gmail.com" class="social-icon">
+            <img src="email-icon.png" alt="Email Icon">
+        </a>
+        <a href="https://www.linkedin.com/in/muhammad-sammir-jamal-1a7b0127a/" class="social-icon">
+            <img src="linkedin-icon.png" alt="LinkedIn Profile">
+        </a>
+        <a href="https://github.com/Sammir812?tab=repositories" class="social-icon">
+            <img src="github-icon.png" alt="GitHub Repositories">
+        </a>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Muhammad Umer Sajid. All rights reserved.</p>
+    </footer>
+
+    <!-- Projects Section -->
+    <section id="projects-section">
+        <h2>Click on a Project to View Details</h2>
+        
+        <div class="project-container">
+            <div class="project-card">
+                <h3 class="project-name" onclick="loadProject('index1.html')">Hybrid Solar-Wind Energy System with Grid Synchronization Using MATLAB Simulink</h3>
+                <p>Click to view project details</p>
+            </div>
+            <div class="project-card">
+                <h3 class="project-name" onclick="loadProject('index1.html')">Frequency Glitch Detection & Removal</h3>
+                <p>Click to view project details</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Container where the new project details (index1.html) will be loaded -->
+    <div id="project-details-container"></div>
+
+    <!-- Embed iframe for the engineering projects page (index1.html) -->
+    <iframe id="project-iframe" class="hidden" src="index1.html" width="100%" height="800px" style="border:none;"></iframe>
+
+    <script src="script.js"></script>
+</body>
+</html>
