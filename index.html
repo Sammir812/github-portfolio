@@ -340,25 +340,41 @@
 
         /* ------------------- CONTACT FORM STYLES ------------------- */
         .contact-section {
-            padding: 50px 20px;
-            background-color: #1a1a1a;
-            color: #fff;
-            text-align: center;
-        }
+    padding: 50px 20px;
+    background-color: #1a1a1a;
+    color: #fff;
+    text-align: center;
+}
 
-        .contact-title {
-            font-size: 36px;
-            color: #00c4cc;
-            margin-bottom: 30px;
-        }
+.contact-title {
+    font-size: 36px;
+    color: #00c4cc;
+    margin-bottom: 30px;
+}
 
-        .contact-form {
-            max-width: 600px;
-            margin: auto;
-            background-color: #222;
-            padding: 20px;
-            border-radius: 10px;
-        }
+.contact-form {
+    max-width: 600px;
+    margin: auto;
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* NEW — fixes layout shifting */
+.contact-icons {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Optional for consistency */
+.social-icon {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
 
         .contact-form input, .contact-form textarea {
             width: 100%;
@@ -971,7 +987,7 @@
             <div class="projects-container-wrapper">
 
                 <div class="project-card experience-card">
-                    <h3 class="project-name">Engineer</h3>
+                    <h3 class="project-name">Engineering Intern</h3>
                     <p class="project-type">Air University Mems Lab (Part Time) </p>
                     <p class="project-description" style="font-size: 14px; color: #00c4cc; margin-bottom: 10px;">
                         Date: 15-09-2025 – Present
@@ -1059,31 +1075,31 @@
         </section>
 
         
-
 <section class="contact-section dynamic-section" id="contact" data-dynamic="true">
     <h2 class="contact-title">Feel Free to Contact</h2>
 
-    <form class="contact-form" action="mailto:sammirjamal928@gmail.com" method="post" enctype="text/plain">
+    <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY">
+
         <input type="email" name="email" placeholder="Your email" required>
         <input type="text" name="subject" placeholder="Subject" required>
         <textarea name="message" rows="4" placeholder="Message" required></textarea>
         <button type="submit">Send</button>
     </form>
 
-    <div class="contact-icons" style="margin-top: 25px; margin-bottom: 0;">
-        <a href="https://www.linkedin.com/in/muhammad-sammir-jamal-1a7b0127a/" target="_blank" title="LinkedIn Profile">
+    <div class="contact-icons">
+        <a href="https://www.linkedin.com/in/muhammad-sammir-jamal-1a7b0127a/" target="_blank">
             <img src="linkedin-icon.png" alt="LinkedIn" class="social-icon">
         </a>
-        
-        <a href="https://github.com/Sammir812?tab=repositories" target="_blank" title="GitHub Repositories">
+        <a href="https://github.com/Sammir812?tab=repositories" target="_blank">
             <img src="github-icon.png" alt="GitHub" class="social-icon">
         </a>
-        
-        <a href="mailto:sammirjamal928@gmail.com" title="Send an Email">
+        <a href="mailto:sammirjamal928@gmail.com">
             <img src="email-icon.png" alt="Email" class="social-icon">
         </a>
     </div>
-    </section>
+</section>
+
 
     </div>
 
