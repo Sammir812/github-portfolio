@@ -1,0 +1,1632 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Sammir Jamal | Electrical Engineer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+
+    <style>
+        /* Global Styles (For the overall page structure) */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #111;
+            color: #fff;
+        }
+
+        /* ------------------- HEADER/ABOUT/NAV STYLES ------------------- */
+        
+        /* Header/Profile Styles */
+       
+        /* Header/Profile Styles */
+        
+
+        header {
+
+            background-color: #000;
+
+            padding: 40px 20px;
+
+            text-align: center;
+
+        }
+
+        .profile-container {
+
+            max-width: 800px;
+
+            margin: auto;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            gap: 30px;
+
+        }
+
+     .profile-pic img {
+
+            width: 150px;
+
+            height: 160px; /* Reduced height slightly to crop more from the bottom */
+
+            border-radius: 50%;
+
+            border: 4px solid #00c4cc;
+
+            object-fit: cover;
+
+            object-position: top;
+
+        } 
+    
+
+        .profile-info h1 {
+            color: #fff;
+            font-size: 28px;
+            margin-bottom: 5px;
+        }
+        .profile-info h2 {
+            color: #00c4cc;
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+        .profile-info p {
+            font-size: 14px;
+            color: #ccc;
+        }
+
+        /* About Section Styles */
+        #about {
+            background-color: #1a1a1a;
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .about-container {
+            max-width: 800px;
+            margin: auto;
+        }
+        #about h2 {
+            color: #00cc99;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+        #about p {
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 30px;
+        }
+        .stat-item p {
+            font-size: 30px;
+            font-weight: bold;
+            color: #00c4cc;
+            margin-bottom: 5px;
+        }
+        .stat-item span {
+            font-size: 14px;
+            color: #ccc;
+        }
+
+
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.social-icon {
+    width: 50px; /* adjust size */
+    height: 50px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    cursor: pointer;
+}
+
+/* Hover effects */
+.social-icon:hover {
+    transform: scale(1.2) rotate(-10deg); /* grows and rotates slightly */
+    filter: drop-shadow(0 0 10px #00c4cc); /* glowing effect */
+}
+
+/* Optional: add continuous gentle float animation */
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+}
+
+.social-icon {
+    animation: float 3s ease-in-out infinite;
+}
+
+       .stats {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin: 50px 0;
+    gap: 40px;
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stat-item i {
+    color: #00c4cc; /* Icon color */
+    margin-bottom: 15px;
+    animation: bounce 2s infinite; /* moving animation */
+}
+
+.stat-item p {
+    font-size: 2.5rem;
+    margin: 0;
+    font-weight: bold;
+    color: #00c4cc;
+}
+
+.stat-item span {
+    font-size: 1rem;
+    color: #ccc;
+}
+
+/* Bounce animation for icons */
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+}
+
+
+     /* Square Button Styles with Matching Mint Green */
+.footer-btn {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin: 5px;
+    /* Use the exact color from your "About Me" heading */
+    border: 2px solid #00c4cc !important; 
+    display: inline-block;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+/* Hover effect using the same color */
+.footer-btn:hover {
+    background-color: #00c4cc;
+    color: black;
+}
+/* This targets the specific lines visible in your screenshot */
+section, .content-container, main {
+    border-top: none !important;
+    border-bottom: none !important;
+    outline: none !important;
+}
+
+/* Sometimes these lines are actually height-restricted empty divs */
+hr, .separator, .line {
+    display: none !important;
+}
+        /* Existing Button Styles */
+.footer-btn {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border-radius: 5px;
+    border: 2px solid #00c4cc; /* matching your theme */
+    transition: all 0.3s ease;
+    font-size: 16px;
+
+    /* New: floating animation */
+    animation: floatUpDown 3s ease-in-out infinite;
+}
+
+/* Hover effect */
+.footer-btn:hover {
+    background-color: #00c4cc;
+    color: #000;
+}
+
+/* Keyframes for up-and-down floating */
+@keyframes floatUpDown {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); } /* moves up by 8px */
+}
+
+
+        /* Footer and Social Links */
+        .footer-social {
+            background-color: #000;
+            padding: 20px 0;
+            text-align: center;
+            border-top: 1px solid #222;
+        }
+        .social-icon img {
+            width: 30px;
+            height: 30px;
+            margin: 0 10px;
+            transition: transform 0.2s;
+        }
+        .social-icon:hover img {
+            transform: scale(1.1);
+        }
+        footer {
+            background-color: #000;
+            padding: 10px 0;
+            text-align: center;
+            font-size: 12px;
+            color: #555;
+        }
+        
+
+        /* Dynamic Section Control - Hides all dynamic sections by default. JS will show Contact and About on load. */
+        .dynamic-section[data-dynamic="true"] {
+            display: none; 
+            padding: 50px 20px; 
+        }
+
+       
+        /* ------------------- PROJECT/EXPERIENCE/ACHIEVEMENT CARD STYLES ------------------- */
+        
+        .projects-section {
+            padding: 30px 0;
+            text-align: center;
+            background-color: #111;
+            color: #fff;
+        }
+
+        .projects-title {
+            font-size: 36px;
+            color: #00c4cc;
+            margin-bottom: 35px;
+            margin-top: 30px;
+        }
+
+        .projects-subtitle {
+            font-size: 24px;
+            color: #00cc99;
+            margin-bottom: 25px;
+        }
+
+        /* CORE LAYOUT: CONTAINER WRAPPER (Sets up side-by-side flex behavior) */
+        .projects-container-wrapper {
+            display: flex; 
+            flex-wrap: wrap; 
+            justify-content: center;
+            gap: 30px; 
+            width: 100%;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0;
+        }
+
+        /* Individual Card Style (Used for Projects, Experience, and Achievements) */
+        .project-card {
+            background-color: #222;
+            padding: 15px;
+            border-radius: 10px;
+            transition: transform 0.3s;
+            border: 2px solid #00c4cc; 
+            width: 100%; 
+            max-width: 550px;  
+            height: 350px; /* Default height for project/achievement cards */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; 
+            text-align: left; 
+            overflow: hidden; 
+        }
+        /* Override for Experience/Certifications cards to allow dynamic height */
+        .project-card.experience-card {
+            height: auto !important;
+            max-width: 800px; /* Wider for experience details */
+        }
+        /* Style for the separator in experience section only */
+        .experience-separator {
+            width: 100%; 
+            border-color: #333; 
+            margin: 20px 0;
+        }
+
+
+        .project-card:hover {
+            transform: scale(1.02);
+        }
+
+        /* Project/Experience/Achievement Details */
+        .project-name {
+            font-size: 18px;
+            margin: 0;
+            margin-bottom: 5px;
+            color: #fff;
+        }
+
+        .project-description {
+            font-size: 14px;
+            color: #ccc;
+            margin: 5px 0;
+            line-height: 1.3;
+            flex-grow: 1; /* Allows description to take available space */
+        }
+
+        .project-type {
+            font-size: 16px;
+            color: #00c4cc;
+            margin: 0;
+            margin-bottom: 5px;
+        }
+
+        /* List styling within experience cards */
+        .project-card ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            margin: 10px 0;
+        }
+        .project-card li {
+            margin-bottom: 5px;
+        }
+
+        /* Technology Tags */
+        .tech-tag-container {
+            margin-top: 5px;
+            margin-bottom: 0;
+        }
+
+        .tech-tag {
+            display: inline-block;
+            background-color: #005f6b;
+            color: #00c4cc;
+            padding: 3px 6px;
+            margin: 2px 2px 2px 0;
+            border-radius: 5px;
+            font-size: 11px;
+            font-weight: bold;
+        }
+
+        /* INTERNAL IMAGE LAYOUT (For Project and Achievement Cards) */
+        .project-images {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            margin-bottom: 5px;
+        }
+
+        .image-wrapper {
+            width: 48%; /* Each image takes just under half the width */
+            height: 90px; /* Fixed height for consistency */
+        }
+
+        .project-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .image-wrapper:hover .project-image {
+            transform: scale(1.05);
+        }
+
+ 
+
+        /* --- MODAL (ZOOM) STYLES --- */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            padding-top: 100px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+
+        .modal-content {
+            margin: auto;
+            display: block;
+            width: 90%;
+            max-width: 800px;
+            animation-name: zoom;
+            animation-duration: 0.6s;
+        }
+
+        @keyframes zoom {
+            from {transform:scale(0)} 
+            to {transform:scale(1)}
+        }
+
+        .close {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: #f1f1f1;
+            font-size: 40px;
+            font-weight: bold;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #bbb;
+            text-decoration: none;
+        }
+
+        /* ------------------- CONTACT FORM STYLES ------------------- */
+        .contact-section {
+    padding: 50px 20px;
+    background-color: #1a1a1a;
+    color: #fff;
+    text-align: center;
+}
+
+.contact-title {
+    font-size: 36px;
+    color: #00c4cc;
+    margin-bottom: 30px;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: auto;
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* NEW — fixes layout shifting */
+.contact-icons {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Optional for consistency */
+.social-icon {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #00c4cc;
+            background-color: #333;
+            color: #fff;
+            font-size: 14px;
+        }
+
+        .contact-form button {
+            padding: 10px 20px;
+            background-color: #00c4cc;
+            border: none;
+            color: #000;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: #00b3b3;
+        }
+
+    </style>
+</head>
+<body onload="setDefaultDynamicSection()">
+
+    <header role="banner">
+    <div class="profile-container">
+        <div class="robot-mind left">
+            <div class="brain-gear gear-large"></div>
+            <div class="brain-gear gear-small"></div>
+        </div>
+
+        <div class="profile-pic">
+            <img src="profile.PNG" alt="Muhammad Sammir Jamal Profile Picture">
+        </div>
+
+        <div class="profile-info">
+            <h1>Muhammad Sammir Jamal</h1>
+            <h2>Electrical Engineer</h2>
+            <p>Final year Electrical Engineering student specializing in Power Systems, Power Electronics, Embedded Systems, and Automation & Control. Committed to creating impactful engineering solutions that address complex technical problems.</p>
+        </div>
+
+        <div class="robot-mind right">
+            <div class="brain-gear gear-large"></div>
+            <div class="brain-gear gear-small"></div>
+        </div>
+    </div>
+</header>
+    <section id="about">
+        <div class="about-container">
+            <h2>About Me</h2>
+            <p>I am an Electrical Engineering student at Air University, Islamabad, currently in my final year. 
+               My passion lies in Power Systems, Power Electronics, and Embedded & Control Systems, where I combine theoretical knowledge with practical innovation.</p>
+            <p>Throughout my academic journey, I have specialized in power systems, IoT solutions, embedded systems, and automation. 
+        I have gained extensive experience in automating power engineering for industrial applications.</p>
+        </div>
+<!-- Font Awesome for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+<div class="stats">
+    <div class="stat-item">
+        <i class="fas fa-folder-open fa-3x"></i> <!-- Projects -->
+        <p class="count" data-target="16">0</p>
+        <span>Projects Completed</span>
+    </div>
+    <div class="stat-item">
+        <i class="fas fa-briefcase fa-3x"></i> <!-- Experience -->
+        <p class="count" data-target="5">0</p>
+        <span>Months Professional Experience</span>
+    </div>
+    <div class="stat-item">
+        <i class="fas fa-microchip fa-3x"></i> <!-- Technologies -->
+        <p class="count" data-target="4">0</p>
+        <span>Technologies Mastered</span>
+    </div>
+</div>
+
+
+
+    </section>
+<nav class="footer-nav">
+    <a href="#about" onclick="showSection('about', true, event)" class="footer-btn">About</a>
+    <a href="#" onclick="showSection('projects', false, event)" class="footer-btn">Projects</a>
+    <a href="#" onclick="showSection('case-studies', false, event)" class="footer-btn">Case Studies</a>  <!-- Added Case Studies button -->
+    <a href="#" onclick="showSection('ielts', false, event)" class="footer-btn">IELTS</a>
+    <a href="#" onclick="showSection('skills', false, event)" class="footer-btn">Certifications</a>
+    <a href="#" onclick="showSection('experience', false, event)" class="footer-btn">Experience</a>
+    <a href="#" onclick="showSection('visits', false, event)" class="footer-btn">Industrial Visits</a>
+    <a href="#" onclick="showSection('achievements', false, event)" class="footer-btn">Academic Excellence Awards</a>
+    <a href="#" onclick="showSection('contact', false, event)" class="footer-btn">Contact</a>  
+</nav>
+
+
+<div id="dynamic-content-wrapper">
+    <section class="projects-section dynamic-section" id="projects" data-dynamic="true">
+        <div class="projects-header">
+            <h1 class="projects-title">Engineering Projects</h1>
+            <h2 class="projects-subtitle">Power Engineering/Power Electronics Projects</h2>
+        </div>
+
+        <!-- Power Engineering Projects -->
+        <div class="projects-container-wrapper">
+            <!-- New Project: Three Phase Sag Monitoring System (left) -->
+            <div class="project-card">
+                <h3 class="project-name">Three Phase Sag Monitoring System for Overhead Transmission Lines Using NI LabVIEW and Arduino Mega</h3>
+                <p class="project-type">HARDWARE • SENSOR INTEGRATION</p>
+                <div class="project-images">
+                    <div class="image-wrapper"><img src="sagmonitor1.jpeg" alt="Sag Monitoring System Setup" class="project-image" onclick="openModal(this)" /></div>
+                    <div class="image-wrapper"><img src="sagmonitor2.jpeg" alt="Sag Monitoring System Setup" class="project-image" onclick="openModal(this)" /></div>
+                     <div class="image-wrapper"><img src="sagmonitor3.jpg" alt="Sag Monitoring System Setup" class="project-image" onclick="openModal(this)" /></div>
+                    
+                </div>
+                <p class="project-description">
+                    Implemented a sag monitoring system for overhead transmission lines using sensors, including ultrasonic, load cell (HX711 amplifier), and temperature sensor (DS18B20). Integrated the system with an Arduino Mega for real-time data collection, and used NI LabVIEW for data visualization and monitoring.
+                </p>
+                <div class="tech-tag-container">
+                    <span class="tech-tag">NI LabVIEW</span>
+                    <span class="tech-tag">Arduino Mega</span>
+                    <span class="tech-tag">Ultrasonic Sensor</span>
+                    <span class="tech-tag">Load Cell (HX711)</span>
+                    <span class="tech-tag">DS18B20 Temperature Sensor</span>
+                    <span class="tech-tag">Sensor Integration</span>
+                </div>
+            </div>
+
+            <!-- HVDC CASA Project (right) -->
+            <div class="project-card">
+                <h3 class="project-name">Design and Simulation of Bipolar HVDC Transmission System for CASA-1000 Project</h3>
+                <p class="project-type">SIMULATION • Power Electronics/Power System</p>
+                <div class="project-images">
+                    <div class="image-wrapper"><img src="hvdc1.jpg" alt="HVDC System Simulation Image 1" class="project-image" onclick="openModal(this)" /></div>
+                    <div class="image-wrapper"><img src="hvdc2.jpg" alt="HVDC System Simulation Image 2" class="project-image" onclick="openModal(this)" /></div>
+                    
+                </div>
+                <p class="project-description">
+                    Designed and simulated a high-voltage direct current (HVDC) bipolar transmission system modeled after the Central Asia-South Asia (CASA-1000) project. The simulation focuses on converter station efficiency, harmonic filtering, and stable power transfer between regional grids.
+                </p>
+                <div class="tech-tag-container">
+                    <span class="tech-tag">HVDC</span>
+                    <span class="tech-tag">Bipolar Transmission</span>
+                    <span class="tech-tag">MATLAB Simulink</span>
+                    <span class="tech-tag">CASA-1000</span>
+                    <span class="tech-tag">Power Systems</span>
+                </div>
+            </div>
+
+            <!-- 6-Bus Power System Project (left) -->
+            <div class="project-card">
+                <h3 class="project-name">6-Bus Power System Analysis and Fault Study Implementation Using MATLAB, ETAP, and PowerWorld Simulator</h3>
+                <p class="project-type">SIMULATION • POWER SYSTEM</p>
+                <div class="project-images">
+                    <div class="image-wrapper"><img src="ps1.jpg" alt="Power System Simulation Image 1" class="project-image" onclick="openModal(this)" /></div>
+                    <div class="image-wrapper"><img src="ps2.jpg" alt="Power System Simulation Image 2" class="project-image" onclick="openModal(this)" /></div>
+                </div>
+                <p class="project-description">
+                    The project involves load flow and fault analysis on a 6-bus power system using hand calculations and simulation software (MATLAB, ETAP). It includes Y-bus matrix calculation, Gauss-Seidel iterations, SLG fault analysis, and a comparison with and without solar power.
+                </p>
+                <div class="tech-tag-container">
+                    <span class="tech-tag">PowerWorld Simulator</span>
+                    <span class="tech-tag">Charles L. Fortescue (1918) Research Paper</span>
+                    <span class="tech-tag">ETAP</span>
+                    <span class="tech-tag">Iterative Methods</span>
+                </div>
+            </div>
+
+            <!-- Hybrid Solar-Wind Energy System Project (right) -->
+            <div class="project-card">
+                <h3 class="project-name">Hybrid Solar-Wind Energy System with Grid Synchronization Using MATLAB Simulink</h3>
+                <p class="project-type">SIMULATION • POWER ELECTRONICS</p>
+                <div class="project-images">
+                    <div class="image-wrapper"><img src="hybrid1.PNG" alt="Hybrid Solar-Wind Energy Image 1" class="project-image" onclick="openModal(this)" /></div>
+                    <div class="image-wrapper"><img src="hybrid2.PNG" alt="Hybrid Solar-Wind Energy Image 2" class="project-image" onclick="openModal(this)" /></div>
+                </div>
+                <p class="project-description">
+                    Simulated a hybrid energy system combining solar PV and wind generation. Focused on Grid Synchronization using advanced PLL control algorithms in MATLAB Simulink to ensure stable power injection and reactive power compensation.
+                </p>
+                <div class="tech-tag-container">
+                    <span class="tech-tag">MATLAB Simulink</span>
+                    <span class="tech-tag">PLL</span>
+                    <span class="tech-tag">PCC Control</span>
+                    <span class="tech-tag">Renewable Energy</span>
+                </div>
+            </div>
+
+            <!-- Frequency Glitch Detection Project (left) -->
+            <div class="project-card">
+                <h3 class="project-name">Frequency Glitch Detection & Removal Using DSP Techniques</h3>
+                <p class="project-type">DSP • ALGORITHM DEVELOPMENT</p>
+                <div class="project-images">
+                    <div class="image-wrapper"><img src="dsp1.PNG" alt="DSP Image 1" class="project-image" onclick="openModal(this)" /></div>
+                    <div class="image-wrapper"><img src="dsp2.PNG" alt="DSP Image 2" class="project-image" onclick="openModal(this)" /></div>
+                </div>
+                <p class="project-description">
+                    Developed and implemented Digital Signal Processing (DSP) techniques to identify and eliminate transient frequency glitches from noisy sensor data. Used Kalman Filtering and adaptive notch filters for precise signal cleanup and reliability improvement.
+                </p>
+                <div class="tech-tag-container">
+                    <span class="tech-tag">Kalman Filter</span>
+                    <span class="tech-tag">Notch Filter</span>
+                    <span class="tech-tag">C/C++</span>
+                    <span class="tech-tag">Embedded DSP</span>
+                </div>
+            </div>
+
+            <!-- 11kV Feeders Design Project (right) -->
+            <div class="project-card">
+                <h3 class="project-name">Design of 11kV Feeders for a Newly Planned Township</h3>
+                <p class="project-type">DISTRIBUTION SYSTEM • PLANNING</p>
+                <div class="project-images">
+                    <div class="image-wrapper"><img src="11kv1.png" alt="11kV Feeder Design Image 1" class="project-image" onclick="openModal(this)" /></div>
+                    <div class="image-wrapper"><img src="11kv2.png" alt="11kV Feeder Design Image 2" class="project-image" onclick="openModal(this)" /></div>
+                </div>
+                <p class="project-description">
+                    Engineered the complete design and planning for a new 11kV distribution feeder network covering a small town. Calculations included maximum (kW) that has to be transferred through feeders and load calculations.
+                </p>
+                <div class="tech-tag-container">
+                    <span class="tech-tag">Load Flow Analysis</span>
+                    <span class="tech-tag">System Design</span>
+                    <span class="tech-tag">Feeder Protection</span>
+                    <span class="tech-tag">ETAP/DigSilent</span>
+                </div>
+            </div>
+
+            <!-- Single Phase Autotransformer Project (left) -->
+            <div class="project-card">
+                <h3 class="project-name">Single Phase Autotransformer</h3>
+                <p class="project-type">HARDWARE • TRANSFORMERS</p>
+                <div class="project-images">
+                    <div class="image-wrapper"><img src="transformer1.png" alt="Autotransformer Setup" class="project-image" onclick="openModal(this)" /></div>
+                    <div class="image-wrapper"><img src="transformer2.png" alt="Autotransformer Voltage Measurement" class="project-image" onclick="openModal(this)" /></div>
+                </div>
+                <p class="project-description">
+                    Built a single-phase autotransformer using a single winding for both the primary and secondary circuits. Successfully stepped the voltage down from 220Vrms to 110Vrms & 80Vrms. 
+                </p>
+                <div class="tech-tag-container">
+                    <span class="tech-tag">Autotransformer</span>
+                    <span class="tech-tag">Voltage Regulation</span>
+                    <span class="tech-tag">Power Systems</span>
+                    <span class="tech-tag">Single Phase</span>
+                </div>
+            </div>
+        </div>
+
+        <div style="margin-top: 60px;"></div> 
+
+        <h2 class="projects-subtitle" style="margin-bottom: 30px;">Embedded & IoT Projects</h2>
+
+        <!-- Embedded & IoT Projects -->
+        <div class="projects-container-wrapper">
+            <div class="project-card">
+                <h3 class="project-name">Serial Server Interface For Multiple RS485/RS232 Channels Over TCP/IP In LabVIEW</h3>
+                <p class="project-type">NETWORKING • INSTRUMENTATION</p>
+                <div class="project-images">
+                    <div class="image-wrapper"><img src="serial1.PNG" alt="Serial Server Interface Image 1" class="project-image" onclick="openModal(this)" /></div>
+                    <div class="image-wrapper"><img src="serial2.PNG" alt="Serial Server Interface Image 2" class="project-image" onclick="openModal(this)" /></div>
+                </div>
+                <p class="project-description">
+                    Developed a LabVIEW VI for the Advantech Serial Server to handle multiple RS485/RS232 channels. This solution enabled seamless serial Read/Write operations through any port over TCP/IP, centralizing and displaying the data in LabVIEW.
+                </p>
+                <div class="tech-tag-container">
+                    <span class="tech-tag">LabVIEW</span>
+                    <span class="tech-tag">TCP/IP</span>
+                    <span class="tech-tag">RS485/RS232</span>
+                    <span class="tech-tag">Advantech</span>
+                    <span class="tech-tag">VI Development</span>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h3 class="project-name">Nextion HMI Interfacing In LabVIEW</h3>
+                <p class="project-type">HMI • UART COMMUNICATION</p>
+                <div class="project-images">
+                    <div class="image-wrapper"><img src="hmi1.PNG" alt="Nextion HMI GUI Image 1" class="project-image" onclick="openModal(this)" /></div>
+                    <div class="image-wrapper"><img src="hmi2.PNG" alt="Nextion HMI GUI Image 2" class="project-image" onclick="openModal(this)" /></div>
+                </div>
+                <p class="project-description">
+                    Designed a custom HMI Graphical User Interface (GUI) using Nextion software. Integrated this interface with an NI-myRIO to successfully transfer and process real-time control and display data over UART serial communication into a LabVIEW application.
+                </p>
+                <div class="tech-tag-container">
+                    <span class="tech-tag">Nextion HMI</span>
+                    <span class="tech-tag">LabVIEW</span>
+                    <span class="tech-tag">NI-myRIO</span>
+                    <span class="tech-tag">UART</span>
+                    <span class="tech-tag">GUI Design</span>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h3 class="project-name">Vibration Analysis of AC Motor Using Wireless Data Acquisition via TCP Protocol in LabVIEW</h3>
+                <p class="project-type">IOT • WIRELESS DAQ • DSP</p>
+                <div class="project-images">
+                    <div class="image-wrapper"><img src="vibration2.jpg" alt="Vibration Analysis Wireless Setup" class="project-image" onclick="openModal(this)" /></div>
+                    <div class="image-wrapper"><img src="vibration1.jpg" alt="Vibration Analysis Wireless Setup" class="project-image" onclick="openModal(this)" /></div>
+                </div>
+                <p class="project-description">
+                    Implemented a Vibration Analysis VI using an ESP-32 S3 via Wireless TCP/IP protocol. Generated a static IP for easy access to three-axis (X, Y, and Z) vibration data, including the visualization and processing of FFTs (Fast Fourier Transforms) in LabVIEW for condition monitoring.
+                </p>
+                <div class="tech-tag-container">
+                    <span class="tech-tag">LabVIEW</span>
+                    <span class="tech-tag">ESP32-S3</span>
+                    <span class="tech-tag">TCP/IP</span>
+                    <span class="tech-tag">FFT</span>
+                    <span class="tech-tag">Vibration Sensor</span>
+                    <span class="tech-tag">Condition Monitoring</span>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h3 class="project-name">Three-Phase Power Quality Analyzer in LabVIEW Through Serial Server</h3>
+                <p class="project-type">SCADA • MODBUS • POWER MEASUREMENT</p>
+                <div class="project-images">
+                    <div class="image-wrapper"><img src="pqa1.png" alt="Power Quality Analyzer Interface 1" class="project-image" onclick="openModal(this)" /></div>
+                    <div class="image-wrapper"><img src="pqa2.png" alt="Power Quality Analyzer Interface 2" class="project-image" onclick="openModal(this)" /></div>
+                </div>
+                <p class="project-description">
+                    Developed a three-phase power quality analyzer by integrating an energy meter via a serial server. It reads energy meter registers using the ModBUS RTU (RS485) protocol. The custom LabVIEW VI easily calculates and visualizes key power quality parameters: reactive power, active power, apparent power, power factor, and frequency.
+                </p>
+                <div class="tech-tag-container">
+                    <span class="tech-tag">LabVIEW</span>
+                    <span class="tech-tag">ModBUS RTU</span>
+                    <span class="tech-tag">RS485</span>
+                    <span class="tech-tag">Power Quality</span>
+                    <span class="tech-tag">Energy Meter</span>
+                </div>
+            </div>
+        </div>
+
+         <div class="projects-container-wrapper">
+            <!-- Electrical Transmitters Configuration Project (left) -->
+            <div class="project-card">
+                <h3 class="project-name">Electrical Transmitters Configuration Through National Instruments (my-DAQ) In LabVIEW</h3>
+                <p class="project-type">DAQ • INSTRUMENTATION • SIGNAL PROCESSING</p>
+                <div class="project-images">
+                    <div class="image-wrapper"><img src="daq1.png" alt="myDAQ Transmitter Setup Image 1" class="project-image" onclick="openModal(this)" /></div>
+                    <div class="image-wrapper"><img src="daq2.png" alt="myDAQ LabVIEW VI Image 2" class="project-image" onclick="openModal(this)" /></div>
+                </div>
+                <p class="project-description">
+                    Configured and integrated electrical transmitters (measuring grid current and voltage) with the National Instruments myDAQ device. The analog output signals from the transmitters were acquired and processed by implementing the necessary scaling and conversion equations in LabVIEW for real-time data display.
+                </p>
+                <div class="tech-tag-container">
+                    <span class="tech-tag">LabVIEW</span>
+                    <span class="tech-tag">NI myDAQ</span>
+                    <span class="tech-tag">Data Acquisition (DAQ)</span>
+                    <span class="tech-tag">4-20mA Transmitters</span>
+                    <span class="tech-tag">Signal Scaling</span>
+                </div>
+            </div>
+
+            <!-- State of Charge (SoC) Estimator Project (right) -->
+            <div class="project-card">
+                <h3 class="project-name">State Of Charge (SoC) Estimator Of Battery Using Arduino</h3>
+                <p class="project-type">HARDWARE • ARDUINO</p>
+                <div class="project-images">
+                    <div class="image-wrapper"><img src="soc1.PNG" alt="State Of Charge Image 1" class="project-image" onclick="openModal(this)" /></div>
+                    <div class="image-wrapper"><img src="soc2.PNG" alt="State Of Charge Image 2" class="project-image" onclick="openModal(this)" /></div>
+                </div>
+                <p class="project-description">
+                    Developed a real-time State-of-Charge (SoC) estimator for Li-ion batteries using the Coulomb counting method on Arduino. This provides a low-cost, accurate monitoring solution for portable power systems and is validated against physical battery cycling data.
+                </p>
+                <div class="tech-tag-container">
+                    <span class="tech-tag">Arduino</span>
+                    <span class="tech-tag">C++</span>
+                    <span class="tech-tag">Current Sensor</span>
+                    <span class="tech-tag">Portable Power</span>
+                </div>
+            </div>
+        </div>
+<!-- Communication & RF Projects Section -->
+        <div style="margin-top: 60px;"></div> 
+        <h2 class="projects-subtitle" style="margin-bottom: 30px;">Communication & RF Projects</h2>
+
+        <div class="projects-container-wrapper">
+            <!-- Example Communication Project 1 -->
+            <div class="project-card">
+                <h3 class="project-name">Acoustic Communication Between Two PC's Using MATLAB(BPSK)</h3>
+                <p class="project-type">COMMUNICATION • RF SYSTEMS</p>
+                <div class="project-images">
+                    <div class="image-wrapper"><img src="wireless1.jpg" alt="Wireless Communication Setup 1" class="project-image" onclick="openModal(this)" /></div>
+                    <div class="image-wrapper"><img src="wireless2.jpg" alt="Wireless Communication Setup 2" class="project-image" onclick="openModal(this)" /></div>
+                </div>
+                <p class="project-description">
+                    PC1 is transmitting the student ID using BPSK, and PC2 matches it and sends back the corresponding student data using BPSK.
+                <div class="tech-tag-container">
+                    <span class="tech-tag">Wireless Communication</span>
+    
+                    <span class="tech-tag">Binary Phase Shifting Keying</span>
+                    <span class="tech-tag">MATLAB Coding</span>
+                </div>
+            </div>
+
+            <!-- Example Communication Project 2 -->
+            <div class="project-card">
+                <h3 class="project-name">Design of FM Transmitter Using Discrete Components</h3>
+                <p class="project-type">RF SYSTEMS • EMBEDDED SYSTEMS</p>
+                <div class="project-images">
+                    <div class="image-wrapper"><img src="rf2.jpeg" alt="RF Transmitter Design 1" class="project-image" onclick="openModal(this)" /></div>
+                    <div class="image-wrapper"><img src="rf1.jpg" alt="RF Transmitter Design 2" class="project-image" onclick="openModal(this)" /></div>
+                </div>
+                <p class="project-description">
+                    Designed a 94 MHz FM transmitter using a 2N2222 transistor and other discrete components. Connected a condenser microphone to the transmitter and tuned it to operate within the 85-95 MHz radio frequency range.
+                </p>
+                <div class="tech-tag-container">
+                    <span class="tech-tag">Low Power</span>
+                    <span class="tech-tag">Wireless Communication</span>
+                    <span class="tech-tag">RF Transmitter</span>
+                    <span class="tech-tag">IoT</span>
+                </div>
+            </div>
+        </div>
+
+    </section>
+</div>
+<section class="projects-section dynamic-section" id="case-studies" data-dynamic="true">
+    <div class="projects-header">
+        <h1 class="projects-title">Case Studies</h1>
+        <h2 class="projects-subtitle">Technical Analysis & Power System Research</h2>
+    </div>
+
+    <div class="projects-container-wrapper">
+        <div class="project-card">
+            <h3 class="project-name">Implement & Study: Comparison of Power Flow Algorithms for IEEE Bus Systems in MATLAB</h3>
+            <p class="project-type">MATLAB Research</p>
+            <div class="project-images">
+                <div class="image-wrapper"><img src="cs1.jpg" class="project-image" onclick="openModal(this)" /></div>
+                <div class="image-wrapper"><img src="cs2.jpg" class="project-image" onclick="openModal(this)" /></div>
+                <div class="image-wrapper"><img src="cs3.jpg" class="project-image" onclick="openModal(this)" /></div>
+                <div class="image-wrapper"><img src="cs4.jpg" class="project-image" onclick="openModal(this)" /></div>
+                <div class="image-wrapper"><img src="cs5.jpg" class="project-image" onclick="openModal(this)" /></div>
+                <div class="image-wrapper"><img src="cs6.jpg" class="project-image" onclick="openModal(this)" /></div>
+            </div>
+            <p class="project-description">
+                Implemented and compared power flow algorithms (Gauss, Gauss-Seidel, Newton-Raphson) for IEEE-9, IEEE-14, IEEE-30, and IEEE-57 bus systems in MATLAB, focusing on voltage profile, convergence, and computational performance, while evaluating iteration counts, computation time, and memory usage.
+            </p>
+            <a href="https://www.linkedin.com/posts/muhammad-sammir-jamal-1a7b0127a_power-flow-matlab-activity-7424503847697711104-8SkR?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEQmq88BsGNGQcbCoQOgfCQq0MZ2apwVOX0"
+               target="_blank"
+               class="linkedin-btn">
+               View Detailed Analysis
+            </a>
+            <div class="tech-tag-container">
+                <span class="tech-tag">MATLAB</span>
+                <span class="tech-tag">IEEE Systems</span>
+                <span class="tech-tag">Power Flow</span>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <h3 class="project-name">NEPRA 2024 Performance Evaluation</h3>
+            <p class="project-type">Regulatory Analysis</p>
+            
+            <p class="project-description">
+                The NEPRA Performance Evaluation highlights Pakistan's transmission network's operational challenges, including overloaded corridors, weak voltage regulation, and project delays. These issues result in reduced power transfer efficiency and increased reliance on costly RFO plants. The proposed solution involves adding series compensation to transmission lines, completing key infrastructure like Lahore North G/S, and improving load evacuation. These steps aim to enhance system stability, reduce costs, and ensure efficient power distribution.
+            </p>
+            <a href="https://www.linkedin.com/posts/muhammad-sammir-jamal-1a7b0127a_nepra-ntdc-performance-evaluation-activity-7408222257421938688-MnCD?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEQmq88BsGNGQcbCoQOgfCQq0MZ2apwVOX0"
+               target="_blank"
+               class="linkedin-btn">
+               View Full Presentation
+            </a>
+            <div class="tech-tag-container">
+                <span class="tech-tag">NEPRA</span>
+                <span class="tech-tag">Grid Congestion</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="projects-container-wrapper">
+        <div class="project-card">
+            <h3 class="project-name">NTDC Transmission System Expansion Plan (TSEP)</h3>
+            <p class="project-type">System Planning</p>
+           
+            <p class="project-description">
+                The main issue in the TSEP 2024-34 is the integration of renewable energy, particularly due to its intermittent nature, leading to voltage instability and reactive power compensation challenges. Insufficient transmission infrastructure and N-1 reliability concerns exacerbate these issues. Proposed solutions include reinforcing the grid with 500 kV lines, STATCOMs, and synchronous condensers. Strengthening energy storage systems and smart grids is essential for reliable grid operation.
+            </p>
+            <a href="https://www.linkedin.com/posts/muhammad-sammir-jamal-1a7b0127a_tsep-analysis-activity-7394096042352214016-geUo?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEQmq88BsGNGQcbCoQOgfCQq0MZ2apwVOX0"
+               target="_blank"
+               class="linkedin-btn">
+               View Full Presentation
+            </a>
+            <div class="tech-tag-container">
+                <span class="tech-tag">NTDC</span>
+                <span class="tech-tag">Renewables</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Add the following CSS for the buttons -->
+<style>
+    .linkedin-btn {
+        display: inline-block;
+        margin-top: 12px;
+        padding: 6px 12px;
+        font-size: 13px;
+        color: #00c4cc;
+        border: 1.5px solid #00c4cc;
+        border-radius: 6px;
+        text-decoration: none;
+        transition: all 0.25s ease;
+    }
+
+    .linkedin-btn:hover {
+        background-color: #00c4cc;
+        color: #000;
+    }
+</style>
+
+
+<section class="projects-section dynamic-section" id="ielts" data-dynamic="true">
+    
+    <div class="projects-header">
+        <h1 class="projects-title" style="color: #00cc99;">Cambridge IELTS Academic</h1>
+        <h2 class="projects-subtitle">English Language Proficiency</h2>
+    </div>
+
+    <div class="projects-container-wrapper" style="margin-bottom: 30px;">
+        <div class="project-card experience-card" style="border: 3px solid #00cc99; max-width: 900px; padding: 20px; position: relative;">
+            
+            <h3 class="project-name" style="color: #00cc99; font-size: 24px; margin-bottom: 15px;">IELTS Academic Score</h3>
+            
+            <p class="project-description" style="font-size: 16px; color: #fff; margin-top: 5px; margin-bottom: 15px;">
+                Overall Band: <span style="color: #00c4cc; font-weight: bold; font-size: 18px;">6.5</span>
+            </p>
+            
+            <ul style="list-style: none; padding-left: 0; margin: 10px 0 25px 0; display: flex; flex-wrap: wrap; gap: 30px; font-size: 15px;">
+                <li style="color: #ccc;">Listening: 6.0</li>
+                <li style="color: #ccc;">Writing: 7.0</li>
+                <li style="color: #ccc;">Reading: 7.0</li>
+                <li style="color: #ccc;">Speaking: 6.5</li>
+            </ul>
+            
+            <p class="project-description" style="font-size: 14px; color: #aaa; margin-bottom: 0; line-height: 1.6;">
+                For Organizations Verification<br>
+                Test Report Form: 25PK503362JAMM361A<br>
+                Candidate Number: 503362<br>
+                Test Centre: PK361<br>
+                Test Date: October 11, 2025
+            </p>
+            
+        </div>
+    </div>
+</section>
+
+        
+<hr style="border-color: #333; margin: 60px 0;">
+<hr style="border-color: #333; margin: 60px 0;">
+</div>
+
+<section class="projects-section dynamic-section" id="skills" data-dynamic="true">
+    <div class="projects-header">
+        <h1 class="projects-title">Certifications</h1>
+        <h2 class="projects-subtitle">Specialized Course Completions</h2>
+    </div>
+    <div class="projects-container-wrapper">
+
+        <div class="project-card experience-card">
+            <h3 class="project-name">LabVIEW Programming Fundamentals</h3>
+            <p class="project-type">NI (National Instruments)</p>
+            <p class="project-description" style="font-size: 14px; color: #ccc; margin-bottom: 10px;">
+                Fundamental training in LabVIEW programming for data acquisition, instrument control, and developing graphical user interfaces. Focused on core concepts and hardware interfacing.
+            </p>
+            <div class="tech-tag-container" style="margin-top: 15px;">
+                <span class="tech-tag">LabVIEW</span>
+                <span class="tech-tag">NI LabVIEW</span>
+                <span class="tech-tag">Image Processing</span>
+                <span class="tech-tag">Programming</span>
+            </div>
+        </div>
+
+        <hr class="experience-separator">
+
+        <div class="project-card experience-card">
+            <h3 class="project-name">Embedded Software Development with C - Specialization <a href="https://www.coursera.org/account/accomplishments/specialization/VUWPZXQSQRWO" target="_blank" style="color: #FF4500; text-decoration: none; font-size: 14px;">[Verify]</a></h3>
+            <p class="project-type">Coursera</p>
+            <p class="project-description" style="font-size: 14px; color: #ccc; margin-bottom: 10px;">
+                Developed skills in Embedded Systems programming using C, focusing on Microcontrollers and specifically the ARM Cortex-M architecture.
+            </p>
+            <div class="tech-tag-container" style="margin-top: 15px;">
+                <span class="tech-tag">Embedded Systems</span>
+                <span class="tech-tag">Microcontrollers</span>
+                <span class="tech-tag">ARM Cortex-M</span>
+            </div>
+        </div>
+
+        <hr class="experience-separator">
+
+        <div class="project-card experience-card">
+            <h3 class="project-name">MATLAB Programming for Engineers and Scientists (Specialization) <a href="https://www.coursera.org/account/accomplishments/specialization/PAUP5XUPRSPE" target="_blank" style="color: #FF4500; text-decoration: none; font-size: 14px;">[Verify]</a></h3>
+            <p class="project-type">Coursera</p>
+            <p class="project-description" style="font-size: 14px; color: #ccc; margin-bottom: 10px;">
+                Expertise in MATLAB programming for engineering applications, including Statistical Data Analysis, Signal Processing, and Image Processing, and developing GUIs.
+            </p>
+            <div class="tech-tag-container" style="margin-top: 15px;">
+                <span class="tech-tag">MATLAB</span>
+                <span class="tech-tag">Statistical Data Analysis</span>
+                <span class="tech-tag">Signal Processing</span>
+                <span class="tech-tag">Image Processing</span>
+            </div>
+        </div>
+
+        <hr class="experience-separator">
+
+        <div class="project-card experience-card">
+            <h3 class="project-name">Modeling And Simulation For Simulink <a href="https://www.credly.com/earner/earned/badge/2214bdfa-d114-487b-9f62-c15be65852b7" target="_blank" style="color: #FF4500; text-decoration: none; font-size: 14px;">[Verify]</a></h3>
+            <p class="project-type">MathWorks</p>
+            <p class="project-description" style="font-size: 14px; color: #ccc; margin-bottom: 10px;">
+                Proficiency in Simulink for modeling dynamic systems and conducting simulations. Integrated use of MATLAB for control and analysis.
+            </p>
+            <div class="tech-tag-container" style="margin-top: 15px;">
+                <span class="tech-tag">MATLAB</span>
+                <span class="tech-tag">Simulink</span>
+            </div>
+        </div>
+
+        <hr class="experience-separator">
+
+        <div class="project-card experience-card">
+            <h3 class="project-name">Python 3 Programming (Specialization) <a href="https://www.coursera.org/account/accomplishments/specialization/CFC4HEFEHFVV" target="_blank" style="color: #FF4500; text-decoration: none; font-size: 14px;">[Verify]</a></h3>
+            <p class="project-type">Coursera</p>
+            <p class="project-description" style="font-size: 14px; color: #ccc; margin-bottom: 10px;">
+                Comprehensive training in Python 3 Programming, covering fundamental structures, object-oriented principles, and data manipulation.
+            </p>
+            <div class="tech-tag-container" style="margin-top: 15px;">
+                <span class="tech-tag">Python (Programming Language)</span>
+            </div>
+        </div>
+
+        <hr class="experience-separator">
+
+        <div class="project-card experience-card">
+            <h3 class="project-name">Machine Learning Specialization <a href="https://www.coursera.org/account/accomplishments/specialization/ZTGIR3RRJEX7" target="_blank" style="color: #FF4500; text-decoration: none; font-size: 14px;">[Verify]</a></h3>
+            <p class="project-type">Coursera</p>
+            <p class="project-description" style="font-size: 14px; color: #ccc; margin-bottom: 10px;">
+                Completed the comprehensive Machine Learning Specialization, covering algorithms in Supervised and Unsupervised Learning, and best practices for building AI models.
+            </p>
+            <div class="tech-tag-container" style="margin-top: 15px;">
+                <span class="tech-tag">Machine Learning</span>
+                <span class="tech-tag">Artificial Intelligence (AI)</span>
+            </div>
+        </div>
+
+        <hr class="experience-separator">
+
+        <div class="project-card experience-card">
+            <h3 class="project-name">Systems Engineering <a href="https://www.coursera.org/account/accomplishments/verify/2KJHG2PK3684" target="_blank" style="color: #FF4500; text-decoration: none; font-size: 14px;">[Verify]</a></h3>
+            <p class="project-type">Coursera</p>
+            <p class="project-description" style="font-size: 14px; color: #ccc; margin-bottom: 10px;">
+                Training in the principles and processes of Systems Engineering, including requirements analysis, design, and validation of complex systems.
+            </p>
+            <div class="tech-tag-container" style="margin-top: 15px;">
+                <span class="tech-tag">Systems Engineering</span>
+            </div>
+        </div>
+
+        <hr class="experience-separator">
+        <hr class="experience-separator">
+
+        <div class="project-card experience-card">
+            <h3 class="project-name">Industrial Power Systems Analysis and Stability Specialization <a href="https://www.coursera.org/account/accomplishments/verify/T44AQLZ9JEKX" target="_blank" style="color: #FF4500; text-decoration: none; font-size: 14px;">[Verify]</a></h3>
+            <p class="project-type">Coursera</p>
+            <p class="project-description" style="font-size: 14px; color: #ccc; margin-bottom: 10px;">
+                Specialized in analyzing transient and steady-state stability in industrial power systems, including fault analysis and power system automation techniques.
+            </p>
+            <div class="tech-tag-container" style="margin-top: 15px;">
+                <span class="tech-tag">Power System Automation</span>
+                <span class="tech-tag">Machine Learning</span>
+            </div>
+        </div>
+
+        <hr class="experience-separator">
+
+        <div class="project-card experience-card">
+            <h3 class="project-name">A Practitioner's Approach to Power Distribution & Automation (Specialization) <a href="https://www.coursera.org/account/accomplishments/specialization/35SSA27Y6VD3" target="_blank" style="color: #FF4500; text-decoration: none; font-size: 14px;">[Verify]</a></h3>
+            <p class="project-type">Coursera</p>
+            <p class="project-description" style="font-size: 14px; color: #ccc; margin-bottom: 10px;">
+                Practical specialization in Power Distribution, Power Systems, and modern Power Generation techniques from an industrial perspective.
+            </p>
+            <div class="tech-tag-container" style="margin-top: 15px;">
+                <span class="tech-tag">Power Generation</span>
+                <span class="tech-tag">Power Systems</span>
+                <span class="tech-tag">Power Distribution</span>
+            </div>
+        </div>
+
+        <hr class="experience-separator">
+
+        <div class="project-card experience-card">
+            <h3 class="project-name">Solar Energy for Engineers, Architects and Code Inspectors Specialization <a href="https://www.coursera.org/account/accomplishments/specialization/23GUYC35KWCE" target="_blank" style="color: #FF4500; text-decoration: none; font-size: 14px;">[Verify]</a></h3>
+            <p class="project-type">Coursera</p>
+            <p class="project-description" style="font-size: 14px; color: #ccc; margin-bottom: 10px;">
+                In-depth knowledge of Solar Energy, Photovoltaics, and practical Solar System Design principles for various professionals.
+            </p>
+            <div class="tech-tag-container" style="margin-top: 15px;">
+                <span class="tech-tag">Solar Energy</span>
+                <span class="tech-tag">Solar System Design</span>
+                <span class="tech-tag">Photovoltaics</span>
+            </div>
+        </div>
+
+        <hr class="experience-separator">
+
+        <div class="project-card experience-card">
+            <h3 class="project-name">Electrical Power Generation - An Industrial Outlook <a href="https://www.coursera.org/account/accomplishments/verify/DV4XZFVTQVR7" target="_blank" style="color: #FF4500; text-decoration: none; font-size: 14px;">[Verify]</a></h3>
+            <p class="project-type">Coursera</p>
+            <p class="project-description" style="font-size: 14px; color: #ccc; margin-bottom: 10px;">
+                Course on Electrical Power Generation with a focus on industrial practices and current trends in Electric Power systems.
+            </p>
+            <div class="tech-tag-container" style="margin-top: 15px;">
+                <span class="tech-tag">Power Generation</span>
+                <span class="tech-tag">Electric Power</span>
+            </div>
+        </div>
+
+        <hr class="experience-separator">
+
+        <div class="project-card experience-card">
+            <h3 class="project-name">Hydro, Wind & Solar power: Resources, Variability & Forecast <a href="https://www.coursera.org/account/accomplishments/verify/XLPT23RPQ8BB" target="_blank" style="color: #FF4500; text-decoration: none; font-size: 14px;">[Verify]</a></h3>
+            <p class="project-type">Coursera</p>
+            <p class="project-description" style="font-size: 14px; color: #ccc; margin-bottom: 10px;">
+                Study of renewable resources, including Hydropower, Wind Energy, and Solar PV, focusing on resource variability and forecasting methods.
+            </p>
+            <div class="tech-tag-container" style="margin-top: 15px;">
+                <span class="tech-tag">Hydropower</span>
+                <span class="tech-tag">Wind Energy</span>
+                <span class="tech-tag">Solar Energy</span>
+            </div>
+        </div>
+
+        <hr class="experience-separator">
+
+        <div class="project-card experience-card">
+            <h3 class="project-name">Renewable Power and Electricity Systems <a href="https://www.coursera.org/account/accomplishments/verify/982AJXBJ5HZA" target="_blank" style="color: #FF4500; text-decoration: none; font-size: 14px;">[Verify]</a></h3>
+            <p class="project-type">Coursera</p>
+            <p class="project-description" style="font-size: 14px; color: #ccc; margin-bottom: 10px;">
+                Covers the integration of Renewable Energy Systems into the modern electricity grid and their impact on power infrastructure.
+            </p>
+            <div class="tech-tag-container" style="margin-top: 15px;">
+                <span class="tech-tag">Renewable Energy Systems</span>
+            </div>
+        </div>
+
+        <hr class="experience-separator">
+
+        <div class="project-card experience-card">
+            <h3 class="project-name">Electric Power Systems <a href="https://www.coursera.org/account/accomplishments/verify/T44AQLZ9JEKX" target="_blank" style="color: #FF4500; text-decoration: none; font-size: 14px;">[Verify]</a></h3>
+            <p class="project-type">Coursera</p>
+            <p class="project-description" style="font-size: 14px; color: #ccc; margin-bottom: 10px;">
+                A course focused on the fundamental analysis, operation, and control of Electric Power Systems.
+            </p>
+            <div class="tech-tag-container" style="margin-top: 15px;">
+                <span class="tech-tag">Electric Power Systems</span>
+            </div>
+        </div>
+
+        <hr class="experience-separator">
+
+        <div class="project-card experience-card">
+            <h3 class="project-name">Motors and Motor Control Circuits <a href="https://www.coursera.org/account/accomplishments/verify/Z48HNFEU8B4U" target="_blank" style="color: #FF4500; text-decoration: none; font-size: 14px;">[Verify]</a></h3>
+            <p class="project-type">Coursera</p>
+            <p class="project-description" style="font-size: 14px; color: #ccc; margin-bottom: 10px;">
+                Focused training on the principles of various electric Motors and the design and analysis of their associated Motor Control circuits.
+            </p>
+            <div class="tech-tag-container" style="margin-top: 15px;">
+                <span class="tech-tag">Motor Control</span>
+            </div>
+        </div>
+
+        <hr class="experience-separator">
+
+        <div class="project-card experience-card">
+            <h3 class="project-name">Ultimate Electrical Design Course from Zero to Hero <a href="https://www.udemy.com/certificate/UC-0c045ca6-6b64-4ccd-9951-4503eaa394a9/" target="_blank" style="color: #FF4500; text-decoration: none; font-size: 14px;">[Verify]</a></h3>
+            <p class="project-type">Udemy</p>
+            <p class="project-description" style="font-size: 14px; color: #ccc; margin-bottom: 10px;">
+                A comprehensive course covering practical Electrical Design principles, codes, and safe Electrical Wiring practices from basic to advanced levels.
+            </p>
+            <div class="tech-tag-container" style="margin-top: 15px;">
+                <span class="tech-tag">Electrical Design</span>
+                <span class="tech-tag">Electrical Wiring</span>
+            </div>
+        </div>
+
+    </div>
+</section>
+<section class="projects-section dynamic-section" id="visits" data-dynamic="true">
+    <div class="projects-header">
+        <h1 class="projects-title">Industrial Visits</h1>
+        <h2 class="projects-subtitle">Practical Exposure to Industry</h2>
+    </div>
+
+    <div class="projects-container-wrapper">
+        
+        <div class="project-card project-card-left">
+            <h3 class="project-name">Visit 1: FECTO Cement Factory</h3>
+            <p class="project-date">November 2022</p>
+            <div class="project-images">
+                <div class="image-wrapper"><img src="fecto2 (1).jpg" alt="Fecto Cement Factory Image 1" class="project-image" onclick="openModal(this)" /></div>
+                <div class="image-wrapper"><img src="fecto2 (2).jpg" alt="Fecto Cement Factory Image 2" class="project-image" onclick="openModal(this)" /></div>
+            </div>
+            <p class="project-description">
+                Gained insights into the operational processes of a large-scale cement manufacturing plant. Observed raw material handling, clinker production, grinding, and packaging, understanding the role of automation and quality control in heavy industry.
+            </p>
+            <div class="project-details">
+                <p>Location: Fateh Jang, Pakistan</p>
+                <p>Focus: Cement Manufacturing, Industrial Automation, Process Control, Heavy Machinery</p>
+            </div>
+        </div>
+
+        <div class="project-card project-card-right">
+            <h3 class="project-name">Visit 2: Mangla Hydro Power House</h3>
+            <p class="project-date">20-11-2025</p>
+            <div class="project-images">
+                <div class="image-wrapper"><img src="mangla1.jpeg" alt="Mangla Hydro Power House Image 1" class="project-image" onclick="openModal(this)" /></div>
+                <div class="image-wrapper"><img src="mangla2.jpeg" alt="Mangla Hydro Power House Image 2" class="project-image" onclick="openModal(this)" /></div>
+                <div class="image-wrapper"><img src="mangla3.jpeg" alt="Mangla Hydro Power House Image 3" class="project-image" onclick="openModal(this)" /></div> 
+            </div>
+            <p class="project-description">
+                Explored the comprehensive operations of a major hydroelectric power generation facility. Studied turbine generators, control room systems, and power distribution mechanisms, gaining practical knowledge in renewable energy production and grid management.
+            </p>
+            <div class="project-details">
+                <p>Location: Mangla Dam, Pakistan</p>
+                <p>Focus: Hydropower Generation, Turbines, Generators, Grid Integration</p>
+            </div>
+        </div>
+        
+    </div>
+</section>
+        <section class="dynamic-section" id="experience" data-dynamic="true">
+            <div class="projects-header">
+                <h1 class="projects-title">Professional Experience</h1>
+                <h2 class="projects-subtitle">Roles & Internships</h2>
+            </div>
+
+            <div class="projects-container-wrapper">
+
+                <div class="project-card experience-card">
+                    <h3 class="project-name">Engineering Intern</h3>
+                    <p class="project-type">Air University Mems Lab (Part Time) </p>
+                    <p class="project-description" style="font-size: 14px; color: #00c4cc; margin-bottom: 10px;">
+                        Date: 15-09-2025 – December 2025
+                    </p>
+                    <h4 style="font-size: 16px; margin-top: 5px; color: #fff;">Responsibilities:</h4>
+                    <ul>
+                        <li style="font-size: 14px; margin-left: 20px; color: #ccc;">Sensor Integration: Integrating various sensors and hardware modules with the lab's control systems.</li>
+                        <li style="font-size: 14px; margin-left: 20px; color: #ccc;">GUI & Control Development: Designing and implementing Graphical User Interfaces (GUI) and control logic using LabVIEW for real-time data visualization and hardware operation.</li>
+                    </ul>
+                    <div class="tech-tag-container" style="margin-top: 15px;">
+                        <span class="tech-tag">LabVIEW</span>
+                        <span class="tech-tag">Sensor Integration</span>
+                        <span class="tech-tag">Hardware Control</span>
+                        <span class="tech-tag">GUI Development</span>
+                    </div>
+                </div>
+
+                <hr class="experience-separator">
+
+                <div class="project-card experience-card">
+                    <h3 class="project-name">Paid Engineering Intern</h3>
+                    <p class="project-type">Research Instruments And Measurement Systems</p>
+                    <p class="project-description" style="font-size: 14px; color: #00c4cc; margin-bottom: 10px;">
+                        Date: 07-07-2025 – 29-08-2025
+                    </p>
+                    <h4 style="font-size: 16px; margin-top: 5px; color: #fff;">Responsibilities:</h4>
+                    <ul>
+                        <li style="font-size: 14px; margin-left: 20px; color: #ccc;">Test & Measurement (T&M):Worked within the Test & Measurement Department focusing on quality assurance and data acquisition.</li>
+                        <li style="font-size: 14px; margin-left: 20px; color: #ccc;">LabVIEW Integration: Successfully integrated Test and Measurement (National Instruments)hardware (e.g., multimeters, oscilloscopes,Serial Servers) with LabVIEW for automated data logging and analysis in a professional environment.</li>
+                    </ul>
+                    <div class="tech-tag-container" style="margin-top: 15px;">
+                        <span class="tech-tag">LabVIEW</span>
+                        <span class="tech-tag">Data Acquisition (DAQ)</span>
+                        <span class="tech-tag">Test Automation</span>
+                        <span class="tech-tag">Hardware Interfacing</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+ <section class="projects-section dynamic-section" id="achievements" data-dynamic="true">
+    <div class="projects-header">
+        <h1 class="projects-title">Academic Excellence Awards</h1>
+        <h2 class="projects-subtitle">Recognizing Top Academic Performance</h2>
+    </div>
+
+    <div class="projects-container-wrapper">
+        <div class="project-card">
+            <h3 class="project-name">Highest Semester GPA In Fall 2024</h3>
+            <p class="project-type">Academic Achievement</p>
+            <div class="project-images">
+                <div class="image-wrapper"><img src="fall241.jpeg" alt="Highest Semester GPA Fall 2024 Certificate 1" class="project-image" onclick="openModal(this)" /></div>
+                <div class="image-wrapper"><img src="fall242.png" alt="Highest Semester GPA Fall 2024 Certificate 2" class="project-image" onclick="openModal(this)" /></div>
+            </div>
+            <p class="project-description">
+                Achieved the highest semester GPA of 3.94/4.00 across 3 sections, ranking 1st out of 100 students in the electrical engineering program.
+            </p>
+            <div class="tech-tag-container">
+                <span class="tech-tag">Top GPA</span>
+                <span class="tech-tag">Fall 2024</span>
+                <span class="tech-tag">Air University</span>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <h3 class="project-name">Highest Semester GPA In Spring 2024</h3>
+            <p class="project-type">Academic Achievement</p>
+            <div class="project-images">
+                <div class="image-wrapper"><img src="spring241.png" alt="Highest Semester GPA Spring 2024 Certificate 1" class="project-image" onclick="openModal(this)" /></div>
+                <div class="image-wrapper"><img src="spring242.png" alt="Highest Semester GPA Spring 2024 Certificate 2" class="project-image" onclick="openModal(this)" /></div>
+            </div>
+            <p class="project-description">
+                Achieved the highest semester GPA of 3.8/4.00 in the electrical engineering program.
+            </p>
+            <div class="tech-tag-container">
+                <span class="tech-tag">Top GPA</span>
+                <span class="tech-tag">Spring 2024</span>
+                <span class="tech-tag">Air University</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="projects-container-wrapper">
+        <div class="project-card">
+            <h3 class="project-name">Highest Semester GPA In Spring 2025</h3>
+            <p class="project-type">Academic Achievement</p>
+            <p class="project-description">
+                Achieved the highest semester GPA in Spring 2025. The award is pending and will be given in February 2026.
+            </p>
+            <div class="tech-tag-container">
+                <span class="tech-tag">Top GPA</span>
+                <span class="tech-tag">Spring 2025</span>
+                <span class="tech-tag">Air University</span>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <h3 class="project-name">Highest Semester GPA In Fall 2025</h3>
+            <p class="project-type">Academic Achievement</p>
+            <p class="project-description">
+                Achieved the highest semester GPA of 3.88/4.00 in Fall 2025. The award is pending and will be given in June 2026.
+            </p>
+            <div class="tech-tag-container">
+                <span class="tech-tag">Top GPA</span>
+                <span class="tech-tag">Fall 2025</span>
+                <span class="tech-tag">Air University</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="projects-container-wrapper">
+        <div class="project-card">
+            <h3 class="project-name">Air University Merit-Based Scholarship</h3>
+            <p class="project-type">Academic Excellence • 5 Semesters</p>
+            <p class="project-description">
+                Awarded a merit-based scholarship granted to the top 3 students of the entire batch across 4 sections (120 students). I am a recipient of this scholarship for five consecutive semesters.
+            </p>
+            <div class="tech-tag-container">
+                <span class="tech-tag">Merit Scholar</span>
+                <span class="tech-tag">Batch Top 1</span>
+                <span class="tech-tag">Air University</span>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <h3 class="project-name">Prime Minister Youth Laptop Award 2023</h3>
+            <p class="project-type">National Merit Award</p>
+            <div class="project-images">
+                <div class="image-wrapper"><img src="laptop1.jpeg" alt="PM Laptop Award 1" class="project-image" onclick="openModal(this)" /></div>
+                <div class="image-wrapper"><img src="laptop2.jpeg" alt="PM Laptop Award 2" class="project-image" onclick="openModal(this)" /></div>
+            </div>
+            <p class="project-description">
+                Awarded a Prime Minister's laptop by the Higher Education Commission (HEC), Government of Pakistan, in 2023 based on academic excellence.
+            </p>
+            <div class="tech-tag-container">
+                <span class="tech-tag">HEC Award</span>
+                <span class="tech-tag">PM Youth Scheme</span>
+                <span class="tech-tag">Govt of Pakistan</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <section class="contact-section dynamic-section" id="contact" data-dynamic="true">
+    <h2 class="contact-title">Feel Free to Contact</h2>
+
+    <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="291fb329-021f-49a1-a143-d10adb031c13"> <!-- Your unique access key -->
+
+        <input type="email" name="email" placeholder="Your email" required>
+        <input type="text" name="subject" placeholder="Subject" required>
+        <textarea name="message" rows="4" placeholder="Message" required></textarea>
+        <button type="submit">Send</button>
+    </form>
+
+    <div class="contact-icons">
+        <a href="https://www.linkedin.com/in/muhammad-sammir-jamal-1a7b0127a/" target="_blank">
+            <img src="linkedin-icon.png" alt="LinkedIn" class="social-icon">
+        </a>
+        <a href="https://github.com/Sammir812?tab=repositories" target="_blank">
+            <img src="github-icon.png" alt="GitHub" class="social-icon">
+        </a>
+        <a href="mailto:sammirjamal928@gmail.com">
+            <img src="email-icon.png" alt="Email" class="social-icon">
+        </a>
+    </div>
+</section>
+
+
+   
+
+    <footer>
+        <p>&copy; 2026 Muhammad Sammir Jamal. All rights reserved.</p>
+    </footer>
+
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="img01">
+    </div>
+
+    <script>
+// Count-up animation for numbers
+const counters = document.querySelectorAll('.count');
+counters.forEach(counter => {
+    counter.innerText = '0';
+    const updateCount = () => {
+        const target = +counter.getAttribute('data-target');
+        const count = +counter.innerText;
+        const increment = target / 100;
+        if(count < target) {
+            counter.innerText = Math.ceil(count + increment);
+            setTimeout(updateCount, 20);
+        } else {
+            counter.innerText = target;
+        }
+    }
+    updateCount();
+});
+</script>
+
+
+    <script>
+        
+        // Function to show the selected dynamic section (and hide all others)
+        function showSection(sectionId, isAbout = false, event) {
+            // Prevent default scroll behavior
+            if (event) { 
+                event.preventDefault(); 
+            }
+            
+            // Only hide all dynamic sections IF the user is clicking a toggled section (i.e., NOT the About section)
+            if (!isAbout) {
+                const dynamicSections = document.querySelectorAll('.dynamic-section[data-dynamic="true"]');
+                dynamicSections.forEach(section => {
+                    section.style.display = 'none';
+                });
+            }
+            
+            // Handle 'About' section separately
+            if (isAbout) {
+                const aboutSection = document.getElementById('about');
+                if (aboutSection) {
+                     window.scrollTo({
+                        top: aboutSection.offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+                return; 
+            }
+
+            // Show the requested dynamic section
+            const targetSection = document.getElementById(sectionId);
+            if (targetSection) {
+                targetSection.style.display = 'block';
+                
+                // Scroll to the target section
+                window.scrollTo({
+                    top: targetSection.offsetTop, 
+                    behavior: 'smooth'
+                });
+            }
+        }
+
+        // Function to set the default state: About (static) and Contact (dynamic) visible on load
+        function setDefaultDynamicSection() {
+            // 1. Hide all dynamic sections first 
+            const dynamicSections = document.querySelectorAll('.dynamic-section[data-dynamic="true"]');
+            dynamicSections.forEach(section => {
+                section.style.display = 'none';
+            });
+
+            // 2. Explicitly show the default dynamic section: Contact
+            const contactSection = document.getElementById('contact');
+            if (contactSection) {
+                contactSection.style.display = 'block';
+            }
+            
+            // The About section is always visible because it lacks the dynamic-section class.
+        }
+
+        // Modal control functions
+        function openModal(img) {
+            var modal = document.getElementById("myModal");
+            var modalImg = document.getElementById("img01");
+            modal.style.display = "block";
+            modalImg.src = img.src;
+        }
+
+        function closeModal() {
+            var modal = document.getElementById("myModal");
+            modal.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            var modal = document.getElementById("myModal");
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+</html>
