@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muhammad Sammir Jamal | Electrical Power Engineer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> 
+
+    <style>
+        /* Global Styles (For the overall page structure) */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #111;
+            color: #fff;
+        }
+
+        /* ------------------- HEADER/ABOUT/NAV STYLES ------------------- */
+        
+        /* Header/Profile Styles */
+        header {
+            background-color: #000;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .profile-container {
+            max-width: 800px;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+        }
+        .profile-pic img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid #00c4cc;
+            object-fit: cover;
+        }
+        .profile-info h1 {
+            color: #fff;
+            font-size: 28px;
+            margin-bottom: 5px;
+        }
+        .profile-info h2 {
+            color: #00c4cc;
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+        .profile-info p {
+            font-size: 14px;
+            color: #ccc;
+        }
+
+        /* About Section Styles */
+        #about {
+            background-color: #1a1a1a;
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .about-container {
+            max-width: 800px;
+            margin: auto;
+        }
+        #about h2 {
+            color: #00cc99;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+        #about p {
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 30px;
+        }
+        .stat-item p {
+            font-size: 30px;
+            font-weight: bold;
+            color: #00c4cc;
+            margin-bottom: 5px;
+        }
+        .stat-item span {
+            font-size: 14px;
+            color: #ccc;
+        }
+
+        /* Navigation Bar Styles */
+        .footer-nav {
+            position: sticky;
+            top: 0;
+            background-color: #000;
+            display: flex;
+            justify-content: center;
+            padding: 15px 0;
+            z-index: 99; 
+            border-bottom: 2px solid #00c4cc;
+        }
+        .footer-btn {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 5px;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+            font-size: 16px;
+        }
+        .footer-btn:hover {
+            background-color: #00c4cc;
+            color: #000;
+        }
+
+        /* Footer and Social Links */
+        .footer-social {
+            background-color: #000;
+            padding: 20px 0;
+            text-align: center;
+            border-top: 1px solid #222;
+        }
+        .social-icon img {
+            width: 30px;
+            height: 30px;
+            margin: 0 10px;
+            transition: transform 0.2s;
+        }
+        .social-icon:hover img {
+            transform: scale(1.1);
+        }
+        footer {
+            background-color: #000;
+            padding: 10px 0;
+            text-align: center;
+            font-size: 12px;
+            color: #555;
+        }
+
+        /* Dynamic Section Control */
+        .dynamic-section {
+            display: none; 
+            padding: 50px 20px; 
+        }
+        
+        /* ------------------- PROJECT SECTION STYLES (WIDER AND SHORTER) ------------------- */
+        
+        .projects-section {
+            padding: 30px 0;
+            text-align: center;
+            background-color: #111; 
+            color: #fff;
+        }
+
+        .projects-title { 
+            font-size: 36px;
+            color: #00c4cc; 
+            margin-bottom: 35px; 
+            margin-top: 30px; 
+        }
+
+        .projects-subtitle { 
+            font-size: 24px;
+            color: #00cc99; 
+            margin-bottom: 25px; 
+        }
+
+        /* CORE LAYOUT: PROJECT CONTAINER */
+        .projects-container-wrapper {
+            display: flex; 
+            flex-wrap: wrap; 
+            justify-content: center;
+            gap: 30px; 
+            /* Width calculation: (650px * 2) + 30px gap = 1330px */
+            width: 1330px; 
+            margin: 20px auto; 
+            padding: 0;
+        }
+
+        /* Individual Project Card (PRECISE WIDTH AND HEIGHT) */
+        .project-card {
+            background-color: #222;
+            padding: 15px; 
+            border-radius: 10px;
+            transition: transform 0.3s;
+            border: 2px solid #00c4cc; 
+            
+            /* TARGET DIMENSIONS: Very Wide and Significantly Shorter */
+            width: 650px; 
+            height: 350px; 
+            
+            /* Flexbox for internal content distribution */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; 
+            text-align: left; 
+            overflow: hidden; 
+        }
+
+        .project-card:hover {
+            transform: scale(1.02); 
+        }
+
+        /* Project Details - MINIMAL VERTICAL MARGINS for compactness */
+        .project-name {
+            font-size: 18px;
+            margin: 0; 
+            margin-bottom: 5px; 
+            color: #fff; 
+        }
+
+        .project-description {
+            font-size: 14px;
+            color: #ccc;
+            margin: 5px 0; 
+            line-height: 1.3; 
+            flex-grow: 1; /* Pushes content down */
+        }
+
+        .project-type {
+            font-size: 16px;
+            color: #00c4cc; 
+            margin: 0; 
+            margin-bottom: 5px; 
+        }
+        
+        /* Technology Tags */
+        .tech-tag-container {
+            margin-top: 5px; 
+            margin-bottom: 0; 
+        }
+
+        .tech-tag {
+            display: inline-block;
+            background-color: #005f6b; 
+            color: #00c4cc; 
+            padding: 3px 6px;
+            margin: 2px 2px 2px 0;
+            border-radius: 5px;
+            font-size: 11px;
+            font-weight: bold;
+        }
+
+        /* INTERNAL IMAGE LAYOUT */
+        .project-images {
+            display: flex; 
+            justify-content: space-between;
+            gap: 10px;
+            margin-bottom: 5px; 
+        }
+
+        /* Image Height - Kept small for short card height */
+        .image-wrapper {
+            width: 48%; 
+            height: 90px; /* Reduced image height again */
+        }
+        
+        .image-wrapper.full-width {
+            width: 100%;
+        }
+
+        .project-image {
+            width: 100%;
+            height: 100%; 
+            object-fit: cover; 
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .image-wrapper:hover .project-image {
+            transform: scale(1.05); 
+        }
+        
+        /* --- MODAL (ZOOM) STYLES --- */
+        .modal {
+            display: none; 
+            position: fixed; 
+            z-index: 1000; 
+            padding-top: 100px; 
+            left: 0;
+            top: 0;
+            width: 100%; 
+            height: 100%; 
+            overflow: auto; 
+            background-color: rgba(0, 0, 0, 0.9); 
+        }
+
+        .modal-content {
+            margin: auto;
+            display: block;
+            width: 90%;
+            max-width: 800px;
+            animation-name: zoom;
+            animation-duration: 0.6s;
+        }
+
+        @keyframes zoom {
+            from {transform:scale(0)} 
+            to {transform:scale(1)}
+        }
+
+        /* The Close Button */
+        .close {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: #f1f1f1;
+            font-size: 40px;
+            font-weight: bold;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #bbb;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <header role="banner">
+    <div class="profile-container">
+      <div class="profile-pic">
+        <img src="profile.jpg" alt="Muhammad Sammir Jamal Profile Picture">
+      </div>
+      <div class="profile-info">
+        <h1>Muhammad Sammir Jamal</h1>
+        <h2>Electrical Power Engineer</h2>
+        <p>Final Year Electrical Engineering Student at Air University, specializing in Power Systems, Power Electronics, and Automation & Control. Creating innovative solutions for complex engineering challenges.</p>
+      </div>
+    </div>
+  </header>
+
+    <section id="about">
+    <div class="about-container">
+      <h2>About Me</h2>
+      <p>I'm a dedicated Electrical Power Engineering student at Air University Islamabad, currently in my final year. My passion lies in Power systems, Power Electronics, and automation, where I combine theoretical knowledge with practical innovation.</p>
+      <p>Throughout my academic journey, I've specialized in power systems, IoT solutions, and automation. I have extensive experience in automating power engineering in industrial applications.</p>
+    </div>
+    <div class="stats">
+      <div class="stat-item">
+        <p>10+</p>
+        <span>Projects Completed</span>
+      </div>
+      <div class="stat-item">
+        <p>3+</p>
+        <span>Years Experience</span>
+      </div>
+      <div class="stat-item">
+        <p>5+</p>
+        <span>Technologies Mastered</span>
+      </div>
+    </div>
+  </section>
+
+    <nav class="footer-nav">
+    <a href="#about" onclick="showSection('about', true, event)" class="footer-btn">About</a>
+    <a href="#" onclick="showSection('projects', false, event)" class="footer-btn">Projects</a> 
+    <a href="#" onclick="showSection('skills', false, event)" class="footer-btn">Skills</a>
+    <a href="#" onclick="showSection('experience', false, event)" class="footer-btn">Experience</a>
+    <a href="#" onclick="showSection('achievements', false, event)" class="footer-btn">Achievements</a>
+    <a href="#" onclick="showSection('contact', false, event)" class="footer-btn">Contact</a>
+  </nav>
+    
+    <div id="dynamic-content-wrapper">
+
+        <section class="projects-section dynamic-section" id="projects">
+            <div class="projects-header">
+                <h1 class="projects-title">Engineering Projects</h1>
+                <h2 class="projects-subtitle">Power Engineering Projects</h2>
+            </div>
+
+            <div class="projects-container-wrapper">
+                
+                <div class="project-card">
+                    <h3 class="project-name">State Of Charge (SoC) Estimator Of Battery Using Arduino</h3>
+                    <p class="project-type">HARDWARE • ARDUINO</p>
+                    <div class="project-images">
+                        <div class="image-wrapper"><img src="soc1.png" alt="State Of Charge Image 1" class="project-image" onclick="openModal(this)" /></div>
+                        <div class="image-wrapper"><img src="soc2.png" alt="State Of Charge Image 2" class="project-image" onclick="openModal(this)" /></div>
+                    </div>
+                    <p class="project-description">
+                        Developed a real-time State-of-Charge (SoC) estimator for Li-ion batteries using the **Coulomb counting method** on **Arduino**. This provides a low-cost, accurate monitoring solution for portable power systems and is validated against physical battery cycling data.
+                    </p>
+                    <div class="tech-tag-container">
+                        <span class="tech-tag">Arduino</span>
+                        <span class="tech-tag">C++</span>
+                        <span class="tech-tag">Current Sensor</span>
+                        <span class="tech-tag">Portable Power</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3 class="project-name">Hybrid Solar-Wind Energy System with Grid Synchronization Using MATLAB Simulink</h3>
+                    <p class="project-type">SIMULATION • POWER ELECTRONICS</p>
+                    <div class="project-images">
+                        <div class="image-wrapper"><img src="hybrid1.png" alt="Hybrid Solar-Wind Energy Image 1" class="project-image" onclick="openModal(this)" /></div>
+                        <div class="image-wrapper"><img src="hybrid2.png" alt="Hybrid Solar-Wind Energy Image 2" class="project-image" onclick="openModal(this)" /></div>
+                    </div>
+                    <p class="project-description">
+                        Simulated a robust hybrid energy system combining solar PV and wind generation. Focused on **Grid Synchronization** using advanced PLL control algorithms in **MATLAB Simulink** to ensure stable power injection and reactive power compensation.
+                    </p>
+                    <div class="tech-tag-container">
+                        <span class="tech-tag">MATLAB Simulink</span>
+                        <span class="tech-tag">PLL</span>
+                        <span class="tech-tag">PCC Control</span>
+                        <span class="tech-tag">Renewable Energy</span>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <h3 class="project-name">Frequency Glitch Detection And Removal Using DSP Techniques</h3>
+                    <p class="project-type">DSP • ALGORITHM DEVELOPMENT</p>
+                    <div class="project-images">
+                        <div class="image-wrapper"><img src="dsp1.png" alt="DSP Image 1" class="project-image" onclick="openModal(this)" /></div>
+                        <div class="image-wrapper"><img src="dsp2.png" alt="DSP Image 2" class="project-image" onclick="openModal(this)" /></div>
+                    </div>
+                    <p class="project-description">
+                        Developed and implemented **Digital Signal Processing (DSP) techniques** to identify and eliminate transient frequency glitches from noisy sensor data. Used **Kalman Filtering** and adaptive notch filters for precise signal cleanup and reliability improvement.
+                    </p>
+                    <div class="tech-tag-container">
+                        <span class="tech-tag">Kalman Filter</span>
+                        <span class="tech-tag">Notch Filter</span>
+                        <span class="tech-tag">C/C++</span>
+                        <span class="tech-tag">Embedded DSP</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3 class="project-name">Design Of 11kV Feeders For A New Town</h3>
+                    <p class="project-type">DISTRIBUTION SYSTEM • PLANNING</p>
+                    <div class="project-images">
+                        <div class="image-wrapper full-width"><img src="feeders.png" alt="11kV Feeder Design" class="project-image" onclick="openModal(this)" /></div>
+                    </div>
+                    <p class="project-description">
+                        Engineered the complete design and planning for a new **11kV distribution feeder network** covering a small town. Calculations included load flow analysis, voltage drop assessment, conductor sizing, and substation transformer capacity planning based on demand forecasts.
+                    </p>
+                    <div class="tech-tag-container">
+                        <span class="tech-tag">Load Flow Analysis</span>
+                        <span class="tech-tag">System Design</span>
+                        <span class="tech-tag">Feeder Protection</span>
+                        <span class="tech-tag">ETAP/DigSilent</span>
+                    </div>
+                </div>
+            
+            </div>
+        </section>
+        <section id="skills" class="dynamic-section" style="background-color: #000; color: #fff; text-align: center;">
+            <h2 style="color: #00cc99;">Skills Section Content Goes Here</h2>
+            <p>This section is ready to be filled with your skills details.</p>
+        </section>
+        
+        <section id="experience" class="dynamic-section" style="background-color: #111; color: #fff; text-align: center;">
+            <h2 style="color: #00cc99;">Experience Section Content Goes Here</h2>
+            <p>This section is ready to be filled with your experience details.</p>
+        </section>
+        
+        <section id="achievements" class="dynamic-section" style="background-color: #000; color: #fff; text-align: center;">
+            <h2 style="color: #00cc99;">Achievements Section Content Goes Here</h2>
+            <p>This section is ready to be filled with your achievements details.</p>
+        </section>
+        
+        <section id="contact" class="dynamic-section" style="background-color: #111; color: #fff; text-align: center;">
+            <h2 style="color: #00cc99;">Contact Section Content Goes Here</h2>
+            <p>This section is ready to be filled with your contact details.</p>
+        </section>
+
+    </div> 
+        <div class="footer-social">
+    <a href="mailto:sammirjamal928@gmail.com" class="social-icon">
+      <img src="email-icon.png" alt="Email Icon">
+    </a>
+    <a href="https://www.linkedin.com/in/muhammad-sammir-jamal-1a7b0127a/" class="social-icon">
+      <img src="linkedin-icon.png" alt="LinkedIn Profile">
+    </a>
+    <a href="https://github.com/Sammir812?tab=repositories" class="social-icon">
+      <img src="github-icon.png" alt="GitHub Repositories">
+    </a>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Muhammad Sammir Jamal. All rights reserved.</p>
+  </footer>
+
+  <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="img01">
+    </div>
+
+    <script>
+        // Function to show the selected section and hide all others
+        function showSection(sectionId, isAbout = false, event) {
+            
+            // 1. IMPORTANT: Prevent the browser's default jump/scroll behavior
+            if (event) {
+                event.preventDefault(); 
+            }
+            
+            // 2. Hide all dynamic sections (Projects, Skills, etc.)
+            const dynamicSections = document.querySelectorAll('.dynamic-section');
+            dynamicSections.forEach(section => {
+                section.style.display = 'none';
+            });
+            
+            // Get the navigation bar element to scroll to
+            const navBar = document.querySelector('.footer-nav');
+
+            // 3. Handle the "About" button click
+            if (isAbout) {
+                // Scroll to the top of the About section
+                document.getElementById('about').scrollIntoView({ behavior: 'smooth' });
+                return;
+            }
+            
+            // 4. Show the requested dynamic section (Projects, Skills, etc.)
+            const targetSection = document.getElementById(sectionId);
+            if (targetSection) {
+                targetSection.style.display = 'block';
+                
+                // 5. CONTROLLED SCROLL: Scroll the navigation bar itself into view.
+                if (navBar) {
+                    navBar.scrollIntoView({ behavior: 'smooth' });
+                } else {
+                    // Fallback to scrolling the new section if nav bar isn't found
+                    targetSection.scrollIntoView({ behavior: 'smooth' });
+                }
+            }
+        }
+
+        // 6. MODAL CONTROL FUNCTIONS 
+        function openModal(img) {
+            var modal = document.getElementById("myModal");
+            var modalImg = document.getElementById("img01");
+            
+            modal.style.display = "block";
+            modalImg.src = img.src; 
+        }
+
+        function closeModal() {
+            var modal = document.getElementById("myModal");
+            modal.style.display = "none";
+        }
+        
+        window.onclick = function(event) {
+            var modal = document.getElementById("myModal");
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

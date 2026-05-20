@@ -1,0 +1,95 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: #fff;
+}
+
+/* Titles */
+.projects-section {
+    padding: 30px 0;
+    text-align: center;
+}
+
+.projects-title {
+    font-size: 36px;
+    color: #00c4cc;
+}
+
+.projects-subtitle {
+    font-size: 24px;
+    color: #00cc99;
+    margin-bottom: 30px;
+}
+
+/* 🎯 CORE LAYOUT FIX: PROJECT CONTAINER (USING CSS GRID) */
+.projects-container-wrapper {
+    /* CRITICAL: Use Grid */
+    display: grid; 
+    
+    /* CRITICAL: Define exactly two equal columns (1fr 1fr) */
+    grid-template-columns: 1fr 1fr; 
+    
+    gap: 30px; /* Space between columns and rows */
+    max-width: 1200px; 
+    margin: 20px auto; 
+    padding: 10px;
+    
+    border: 3px solid purple; /* Visual check for the container */
+}
+
+/* Individual Project Card */
+.project-card {
+    /* Grid handles the width, so we only need styling */
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+    text-align: center;
+    border: 3px solid #00aaff; /* Visual check for the cards */
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+/* Project Details */
+.project-name {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #00c4cc;
+}
+
+.project-type {
+    font-size: 16px;
+    color: #ccc;
+    margin-top: 10px;
+}
+
+/* 🖼️ INTERNAL IMAGE LAYOUT (Still using Flexbox for L-R images) */
+.project-images {
+    display: flex; 
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.image-wrapper {
+    width: 48%; 
+}
+
+.project-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.image-wrapper:hover .project-image {
+    transform: scale(1.05); 
+}
