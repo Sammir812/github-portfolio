@@ -645,6 +645,11 @@ hr, .separator, .line {
         .contact-form button:hover {
             background-color: #00b3b3;
         }
+   .full-width-project {
+    flex: 0 0 70%;
+    max-width: 70%;
+    margin: 0 auto;
+}
 
     </style>
 </head>
@@ -659,7 +664,7 @@ hr, .separator, .line {
         <div class="profile-info">
             <h1>Muhammad Sammir Jamal</h1>
             <h2>Electrical Engineer</h2>
-            <p>Final year Electrical Engineering student specializing in Power Systems, Power Electronics, Embedded Systems, and Automation & Control. Committed to creating impactful engineering solutions that address complex technical problems.</p>
+            <p>Graduate Electrical Engineer (CGPA: 3.81/4.00) specialization in Power Systems and Power Electronics, with experience in Embedded Systems and Optimization.</p>
         </div>
 
         <div class="robot-mind right">
@@ -671,10 +676,7 @@ hr, .separator, .line {
     <section id="about">
         <div class="about-container">
             <h2>About Me</h2>
-            <p>I am an Electrical Engineering student at Air University, Islamabad, currently in my final year. 
-               My passion lies in Power Systems, Power Electronics, and Embedded & Control Systems, where I combine theoretical knowledge with practical innovation.</p>
-            <p>Throughout my academic journey, I have specialized in power systems, IoT solutions, embedded systems, and automation. 
-        I have gained extensive experience in automating power engineering for industrial applications.</p>
+            <p>I am an Academic Gold Medalist and Electrical Engineering graduate from Air University, Islamabad. My research interests include Power Systems, Power Electronics, AI-driven Optimization, and Embedded & Control Systems, where I combine strong theoretical knowledge with practical engineering solutions.</p>
         </div>
 <!-- Font Awesome for icons -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
@@ -719,9 +721,104 @@ hr, .separator, .line {
             <h1 class="projects-title">Engineering Projects</h1>
             <h2 class="projects-subtitle">Power Engineering/Power Electronics Projects</h2>
         </div>
+<div class="project-card full-width-project">
+    <h3 class="project-name">
+        Design and Development of a LabVIEW-Based Single-Phase Induction Motor Trainer
+    </h3>
 
+    <p class="project-type">
+        INDUSTRIAL AUTOMATION • LABVIEW • EMBEDDED SYSTEMS
+    </p>
+
+    <div class="project-images">
+        <div class="image-wrapper">
+            <img src="hardware.jpeg"
+                 alt="Single Phase Induction Motor Trainer"
+                 class="project-image"
+                 onclick="openModal(this)" />
+        </div>
+
+        <div class="image-wrapper">
+            <img src="vfdgui.png"
+                 alt="LabVIEW Monitoring Interface"
+                 class="project-image"
+                 onclick="openModal(this)" />
+        </div>
+
+        <div class="image-wrapper">
+            <img src="gui3.jpeg"
+                 alt="Hardware Implementation"
+                 class="project-image"
+                 onclick="openModal(this)" />
+        </div>
+    </div>
+
+    <p class="project-description">
+        Designed and developed a low-cost educational single-phase induction motor trainer integrating Arduino Mega, National Instruments LabVIEW, and industrial Modbus RTU communication. The system performs real-time monitoring of electrical and mechanical parameters including voltage, current, power, power factor, energy, speed, vibration, temperature, and torque. Implemented Variable Frequency Drive (V/f) speed control, automatic motor protection, motor health evaluation, power factor correction, and real-time data logging through an interactive LabVIEW graphical interface.
+    </p>
+
+    <div class="tech-tag-container">
+        <span class="tech-tag">NI LabVIEW</span>
+        <span class="tech-tag">Arduino Mega 2560</span>
+        <span class="tech-tag">Modbus RTU</span>
+        <span class="tech-tag">RS485</span>
+        <span class="tech-tag">Variable Frequency Drive</span>
+        <span class="tech-tag">V/f Control</span>
+        <span class="tech-tag">Data Acquisition</span>
+        <span class="tech-tag">Power Factor Correction</span>
+        <span class="tech-tag">Motor Protection</span>
+        <span class="tech-tag">Condition Monitoring</span>
+        <span class="tech-tag">Embedded Systems</span>
+        <span class="tech-tag">Industrial Automation</span>
+    </div>
+</div>
         <!-- Power Engineering Projects -->
-        <div class="projects-container-wrapper">
+<div class="projects-container-wrapper">
+
+    <div class="project-card">
+        <h3 class="project-name">
+            Modeling and Simulation of IDMT Overcurrent Protection Relay for 11 kV Distribution Systems
+        </h3>
+
+        <p class="project-type">
+            POWER SYSTEM PROTECTION • MATLAB/SIMULINK
+        </p>
+
+        <div class="project-images">
+            <div class="image-wrapper">
+                <img src="relaymatlab.png"
+                     alt="IDMT Relay Simulation"
+                     class="project-image"
+                     onclick="openModal(this)" />
+            </div>
+
+            <div class="image-wrapper">
+                <img src="relayresult.jpg"
+                     alt="Relay Trip Characteristics"
+                     class="project-image"
+                     onclick="openModal(this)" />
+            </div>
+        </div>
+
+        <p class="project-description">
+            Designed and simulated an IEC Curve C IDMT overcurrent protection relay for an 11 kV distribution system using MATLAB/Simulink. Developed a complete protection scheme incorporating Current Transformer (CT) modeling, RMS current measurement, inverse-time relay logic, trip circuitry, and circuit breaker operation. Verified relay performance through three-phase fault simulations and analytical calculations.
+        </p>
+
+        <div class="tech-tag-container">
+            <span class="tech-tag">MATLAB</span>
+            <span class="tech-tag">Simulink</span>
+            <span class="tech-tag">Simscape Electrical</span>
+            <span class="tech-tag">Power System Protection</span>
+            <span class="tech-tag">IDMT Relay</span>
+            <span class="tech-tag">IEC 60255</span>
+            <span class="tech-tag">Current Transformer</span>
+            <span class="tech-tag">Fault Analysis</span>
+        </div>
+
+    </div>
+
+
+      
             <!-- New Project: Three Phase Sag Monitoring System (left) -->
             <div class="project-card">
                 <h3 class="project-name">Three Phase Sag Monitoring System for Overhead Transmission Lines Using NI LabVIEW and Arduino Mega</h3>
@@ -867,7 +964,58 @@ hr, .separator, .line {
         <h2 class="projects-subtitle" style="margin-bottom: 30px;">Embedded & IoT Projects</h2>
 
         <!-- Embedded & IoT Projects -->
-        <div class="projects-container-wrapper">
+         <!-- AI & Machine Learning Project -->
+   <!-- Embedded & IoT Projects -->
+<div class="projects-container-wrapper">
+
+    <!-- AI & Machine Learning Project -->
+    <div class="project-card">
+        <h3 class="project-name">
+            Hybrid AI-Based Disease Prediction System Using Stacked Machine Learning Models
+        </h3>
+
+        <p class="project-type">
+            ARTIFICIAL INTELLIGENCE • MACHINE LEARNING
+        </p>
+
+        <div class="project-images">
+            <div class="image-wrapper">
+                <img src="ai1.jpg"
+                     alt="Hybrid AI Disease Prediction Model"
+                     class="project-image"
+                     onclick="openModal(this)" />
+            </div>
+
+            <div class="image-wrapper">
+                <img src="ai2.jpg"
+                     alt="Disease Prediction Results"
+                     class="project-image"
+                     onclick="openModal(this)" />
+            </div>
+        </div>
+
+        <p class="project-description">
+            Developed a hybrid machine learning framework for disease prediction by integrating PCA, SMOTE, Bagged SVM, KNN, and Logistic Regression stacking. Evaluated multiple classical machine learning models and improved prediction accuracy, robustness, and class-imbalance handling using ensemble learning techniques.
+        </p>
+
+        <div class="tech-tag-container">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Scikit-learn</span>
+            <span class="tech-tag">PCA</span>
+            <span class="tech-tag">SMOTE</span>
+            <span class="tech-tag">Support Vector Machine</span>
+            <span class="tech-tag">K-Nearest Neighbors</span>
+            <span class="tech-tag">Logistic Regression</span>
+            <span class="tech-tag">Stacking Ensemble</span>
+            <span class="tech-tag">Machine Learning</span>
+            <span class="tech-tag">Healthcare AI</span>
+        </div>
+    </div>
+
+    <!-- Put your Serial Server project here -->
+
+
+      
             <div class="project-card">
                 <h3 class="project-name">Serial Server Interface For Multiple RS485/RS232 Channels Over TCP/IP In LabVIEW</h3>
                 <p class="project-type">NETWORKING • INSTRUMENTATION</p>
@@ -944,9 +1092,7 @@ hr, .separator, .line {
                     <span class="tech-tag">Energy Meter</span>
                 </div>
             </div>
-        </div>
-
-         <div class="projects-container-wrapper">
+      
             <!-- Electrical Transmitters Configuration Project (left) -->
             <div class="project-card">
                 <h3 class="project-name">Electrical Transmitters Configuration Through National Instruments (my-DAQ) In LabVIEW</h3>
@@ -1543,6 +1689,38 @@ hr, .separator, .line {
 
     <div class="projects-container-wrapper">
         <div class="project-card">
+    <h3 class="project-name">Academic Gold Medalist</h3>
+
+    <p class="project-type">ACADEMIC EXCELLENCE</p>
+
+    <p class="project-description">
+        Awarded the Academic Gold Medal for graduating with the highest cumulative GPA (CGPA) of <strong>3.81/4.00</strong> in the Bachelor of Electrical Power Engineering program. The medal will be formally conferred at the university convocation in January 2027.
+    </p>
+
+    <div class="tech-tag-container">
+        <span class="tech-tag">Gold Medal</span>
+        <span class="tech-tag">CGPA 3.81/4.00</span>
+        <span class="tech-tag">Batch Topper</span>
+        <span class="tech-tag">Air University</span>
+    </div>
+</div>
+                <div class="project-card">
+            <h3 class="project-name">Highest Semester GPA In Fall 2025</h3>
+            <p class="project-type">Academic Achievement</p>
+               <div class="project-images">
+                <div class="image-wrapper"><img src="fall252.jpg" alt="Highest Semester GPA Fall 2024 Certificate 1" class="project-image" onclick="openModal(this)" /></div>
+                <div class="image-wrapper"><img src="fall25.JPG" alt="Highest Semester GPA Fall 2024 Certificate 2" class="project-image" onclick="openModal(this)" /></div>
+            </div>
+            <p class="project-description">
+                Achieved the highest semester GPA of 3.88/4.00 in Fall 2025 in my batch.
+            </p>
+            <div class="tech-tag-container">
+                <span class="tech-tag">Top GPA</span>
+                <span class="tech-tag">Fall 2025</span>
+                <span class="tech-tag">Air University</span>
+            </div>
+        </div>
+        <div class="project-card">
             <h3 class="project-name">Highest Semester GPA In Fall 2024</h3>
             <p class="project-type">Academic Achievement</p>
             <div class="project-images">
@@ -1575,9 +1753,9 @@ hr, .separator, .line {
                 <span class="tech-tag">Air University</span>
             </div>
         </div>
-    </div>
+ 
 
-    <div class="projects-container-wrapper">
+   
         <div class="project-card">
             <h3 class="project-name">Highest Semester GPA In Spring 2025</h3>
             <p class="project-type">Academic Achievement</p>
@@ -1594,21 +1772,9 @@ hr, .separator, .line {
             </div>
         </div>
 
-        <div class="project-card">
-            <h3 class="project-name">Highest Semester GPA In Fall 2025</h3>
-            <p class="project-type">Academic Achievement</p>
-            <p class="project-description">
-                Achieved the highest semester GPA of 3.88/4.00 in Fall 2025. The award is pending and will be given in June 2026.
-            </p>
-            <div class="tech-tag-container">
-                <span class="tech-tag">Top GPA</span>
-                <span class="tech-tag">Fall 2025</span>
-                <span class="tech-tag">Air University</span>
-            </div>
-        </div>
-    </div>
 
-    <div class="projects-container-wrapper">
+  
+
         <div class="project-card">
             <h3 class="project-name">Air University Merit-Based Scholarship</h3>
             <p class="project-type">Academic Excellence • 5 Semesters</p>
