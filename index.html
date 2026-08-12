@@ -705,7 +705,9 @@ hr, .separator, .line {
 <nav class="footer-nav">
     <a href="#about" onclick="showSection('about', true, event)" class="footer-btn">About</a>
     <a href="#" onclick="showSection('projects', false, event)" class="footer-btn">Projects</a>
-    <a href="#" onclick="showSection('case-studies', false, event)" class="footer-btn">Case Studies</a>  <!-- Added Case Studies button -->
+<a href="#" onclick="showSection('research-experience', false, event)" class="footer-btn">
+    Research Experience
+</a> <!-- Added Case Studies button -->
     <a href="#" onclick="showSection('ielts', false, event)" class="footer-btn">IELTS</a>
     <a href="#" onclick="showSection('skills', false, event)" class="footer-btn">Certifications</a>
     <a href="#" onclick="showSection('experience', false, event)" class="footer-btn">Experience</a>
@@ -1185,88 +1187,330 @@ hr, .separator, .line {
 </div>
     </section>
 </div>
-<section class="projects-section dynamic-section" id="case-studies" data-dynamic="true">
+<section class="projects-section dynamic-section"
+         id="research-experience"
+         data-dynamic="true">
+
     <div class="projects-header">
-        <h1 class="projects-title">Case Studies</h1>
-        <h2 class="projects-subtitle">Technical Analysis & Power System Research</h2>
+        <h1 class="projects-title">Research Experience</h1>
+        <h2 class="projects-subtitle">
+            Publications, Research & Power System Analysis
+        </h2>
+    </div>
+
+    <!-- ==================== PUBLICATIONS ==================== -->
+
+    <div class="projects-header">
+        <h2 class="projects-subtitle">Publications & Manuscripts</h2>
     </div>
 
     <div class="projects-container-wrapper">
+
+        <!-- Publication 1 -->
         <div class="project-card">
-            <h3 class="project-name">Implement & Study: Comparison of Power Flow Algorithms for IEEE Bus Systems in MATLAB</h3>
-            <p class="project-type">MATLAB Research</p>
-            <div class="project-images">
-                <div class="image-wrapper"><img src="cs1.jpg" class="project-image" onclick="openModal(this)" /></div>
-                <div class="image-wrapper"><img src="cs2.jpg" class="project-image" onclick="openModal(this)" /></div>
-                <div class="image-wrapper"><img src="cs3.jpg" class="project-image" onclick="openModal(this)" /></div>
-                <div class="image-wrapper"><img src="cs4.jpg" class="project-image" onclick="openModal(this)" /></div>
-                <div class="image-wrapper"><img src="cs5.jpg" class="project-image" onclick="openModal(this)" /></div>
-                <div class="image-wrapper"><img src="cs6.jpg" class="project-image" onclick="openModal(this)" /></div>
-            </div>
-            <p class="project-description">
-                Implemented and compared power flow algorithms (Gauss, Gauss-Seidel, Newton-Raphson) for IEEE-9, IEEE-14, IEEE-30, and IEEE-57 bus systems in MATLAB, focusing on voltage profile, convergence, and computational performance, while evaluating iteration counts, computation time, and memory usage.
+
+            <h3 class="project-name">
+                Design and Development of a LabVIEW-Based Single-Phase
+                Induction Motor Trainer and Test Bench for Educational
+                and Industrial Applications
+            </h3>
+
+            <p class="project-type">
+                IEEE IECON 2026 | First Author | Accepted
             </p>
-            <a href="https://www.linkedin.com/posts/muhammad-sammir-jamal-1a7b0127a_power-flow-matlab-activity-7424503847697711104-8SkR?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEQmq88BsGNGQcbCoQOgfCQq0MZ2apwVOX0"
-               target="_blank"
-               class="linkedin-btn">
-               View Detailed Analysis
-            </a>
+
+            <p class="project-description">
+                Designed and developed a LabVIEW-based single-phase
+                induction motor trainer and test bench for educational
+                and industrial applications. The work integrates
+                LabVIEW-based monitoring, control, and experimental
+                analysis to provide a practical platform for studying
+                induction motor characteristics, control behavior, and
+                performance evaluation.
+            </p>
+
+            <p class="project-description">
+                <strong>Status:</strong>
+                Accepted for presentation at the 52nd Annual Conference
+                of the IEEE Industrial Electronics Society (IECON).
+                First-author contribution.
+            </p>
+
             <div class="tech-tag-container">
-                <span class="tech-tag">MATLAB</span>
-                <span class="tech-tag">IEEE Systems</span>
-                <span class="tech-tag">Power Flow</span>
+                <span class="tech-tag">LabVIEW</span>
+                <span class="tech-tag">Induction Motor</span>
+                <span class="tech-tag">Industrial Electronics</span>
+                <span class="tech-tag">Motor Control</span>
+                <span class="tech-tag">IEEE IECON</span>
             </div>
+
         </div>
 
-        <div class="project-card">
-            <h3 class="project-name">NEPRA 2024 Performance Evaluation</h3>
-            <p class="project-type">Regulatory Analysis</p>
-            
-            <p class="project-description">
-                The NEPRA Performance Evaluation highlights Pakistan's transmission network's operational challenges, including overloaded corridors, weak voltage regulation, and project delays. These issues result in reduced power transfer efficiency and increased reliance on costly RFO plants. The proposed solution involves adding series compensation to transmission lines, completing key infrastructure like Lahore North G/S, and improving load evacuation. These steps aim to enhance system stability, reduce costs, and ensure efficient power distribution.
-            </p>
-            <a href="https://www.linkedin.com/posts/muhammad-sammir-jamal-1a7b0127a_nepra-ntdc-performance-evaluation-activity-7408222257421938688-MnCD?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEQmq88BsGNGQcbCoQOgfCQq0MZ2apwVOX0"
-               target="_blank"
-               class="linkedin-btn">
-               View Full Presentation
-            </a>
-            <div class="tech-tag-container">
-                <span class="tech-tag">NEPRA</span>
-                <span class="tech-tag">Grid Congestion</span>
-            </div>
-        </div>
-    </div>
 
-    <div class="projects-container-wrapper">
+        <!-- Publication 2 -->
         <div class="project-card">
-            <h3 class="project-name">NTDC Transmission System Expansion Plan (TSEP)</h3>
-            <p class="project-type">System Planning</p>
-           
-            <p class="project-description">
-                The main issue in the TSEP 2024-34 is the integration of renewable energy, particularly due to its intermittent nature, leading to voltage instability and reactive power compensation challenges. Insufficient transmission infrastructure and N-1 reliability concerns exacerbate these issues. Proposed solutions include reinforcing the grid with 500 kV lines, STATCOMs, and synchronous condensers. Strengthening energy storage systems and smart grids is essential for reliable grid operation.
+
+            <h3 class="project-name">
+                Peer-to-Peer EV Energy Trading via Consensus ADMM
+                and Adaptive Reputation-Based PBFT
+            </h3>
+
+            <p class="project-type">
+                Research Manuscript | Third Author | Manuscript in Process
             </p>
-            <a href="https://www.linkedin.com/posts/muhammad-sammir-jamal-1a7b0127a_tsep-analysis-activity-7394096042352214016-geUo?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEQmq88BsGNGQcbCoQOgfCQq0MZ2apwVOX0"
-               target="_blank"
-               class="linkedin-btn">
-               View Full Presentation
-            </a>
+
+            <p class="project-description">
+                Research on a decentralized peer-to-peer energy trading
+                framework for electric vehicle charging stations,
+                combining Consensus ADMM for distributed optimization
+                with an adaptive reputation-based Practical Byzantine
+                Fault Tolerance mechanism to improve the reliability
+                and security of decentralized energy transactions.
+            </p>
+
+            <p class="project-description">
+                <strong>Status:</strong>
+                Research completed; manuscript preparation and
+                submission process in progress. Third-author contribution.
+            </p>
+
             <div class="tech-tag-container">
-                <span class="tech-tag">NTDC</span>
-                <span class="tech-tag">Renewables</span>
+                <span class="tech-tag">P2P Energy Trading</span>
+                <span class="tech-tag">EV Charging</span>
+                <span class="tech-tag">Consensus ADMM</span>
+                <span class="tech-tag">PBFT</span>
+                <span class="tech-tag">Blockchain</span>
             </div>
+
         </div>
+
+
+        <!-- Publication 3 -->
+        <div class="project-card">
+
+            <h3 class="project-name">
+                Adaptive Deep Reinforcement Learning for Resilient
+                Control of Cyber-Physical Power Systems Under
+                Coordinated False Data Injection Attacks
+            </h3>
+
+            <p class="project-type">
+                Ongoing Research | Cyber-Physical Power Systems
+            </p>
+
+            <p class="project-description">
+                Investigating adaptive deep reinforcement learning
+                approaches for resilient control of cyber-physical
+                power systems exposed to coordinated false data
+                injection attacks. The research focuses on developing
+                intelligent control strategies capable of maintaining
+                system stability and operational resilience under
+                adversarial conditions.
+            </p>
+
+            <p class="project-description">
+                <strong>Status:</strong>
+                Research in progress.
+            </p>
+
+            <div class="tech-tag-container">
+                <span class="tech-tag">Deep Reinforcement Learning</span>
+                <span class="tech-tag">Cyber-Physical Systems</span>
+                <span class="tech-tag">False Data Injection</span>
+                <span class="tech-tag">Power System Control</span>
+                <span class="tech-tag">Resilience</span>
+            </div>
+
+        </div>
+
     </div>
-    <!-- Add this "Explore More" button inside each section -->
+<!-- ==================== RESEARCH CASES ==================== -->
+
+<div class="projects-header">
+    <h2 class="projects-subtitle">
+        Research Cases & Technical Analysis
+    </h2>
+</div>
+
+
+<!-- Power Flow -->
 <div class="projects-container-wrapper">
-    <!-- Your project cards here -->
+
+    <div class="project-card">
+
+        <h3 class="project-name">
+            Comparison of Power Flow Algorithms for IEEE Bus
+            Systems in MATLAB
+        </h3>
+
+        <p class="project-type">
+            Course-Based Research | Power Systems Analysis & Planning
+        </p>
+
+        <div class="project-images">
+
+            <div class="image-wrapper">
+                <img src="cs1.jpg"
+                     class="project-image"
+                     onclick="openModal(this)"
+                     alt="Power Flow MATLAB">
+            </div>
+
+            <div class="image-wrapper">
+                <img src="cs2.jpg"
+                     class="project-image"
+                     onclick="openModal(this)"
+                     alt="Gauss Power Flow">
+            </div>
+
+            <div class="image-wrapper">
+                <img src="cs3.jpg"
+                     class="project-image"
+                     onclick="openModal(this)"
+                     alt="Gauss-Seidel Power Flow">
+            </div>
+
+            <div class="image-wrapper">
+                <img src="cs4.jpg"
+                     class="project-image"
+                     onclick="openModal(this)"
+                     alt="Newton-Raphson Power Flow">
+            </div>
+
+            <div class="image-wrapper">
+                <img src="cs5.jpg"
+                     class="project-image"
+                     onclick="openModal(this)"
+                     alt="IEEE Bus System Analysis">
+            </div>
+
+            <div class="image-wrapper">
+                <img src="cs6.jpg"
+                     class="project-image"
+                     onclick="openModal(this)"
+                     alt="Power Flow Comparison">
+            </div>
+
+        </div>
+
+        <p class="project-description">
+            Implemented and compared Gauss, Gauss-Seidel, and
+            Newton-Raphson power flow algorithms for IEEE-9,
+            IEEE-14, IEEE-30, and IEEE-57 bus systems in MATLAB.
+            The study focused on voltage profiles, convergence
+            characteristics, iteration counts, computation time,
+            and memory usage to evaluate the computational
+            performance of different numerical methods.
+        </p>
+
+        <a href="https://www.linkedin.com/posts/muhammad-sammir-jamal-1a7b0127a_power-flow-matlab-activity-7424503847697711104-8SkR"
+           target="_blank"
+           class="linkedin-btn">
+            View Detailed Analysis
+        </a>
+
+        <div class="tech-tag-container">
+            <span class="tech-tag">MATLAB</span>
+            <span class="tech-tag">IEEE Systems</span>
+            <span class="tech-tag">Power Flow</span>
+            <span class="tech-tag">Newton-Raphson</span>
+            <span class="tech-tag">Gauss-Seidel</span>
+        </div>
+
+    </div>
+
 </div>
 
-<!-- Explore More Button -->
+
+<!-- TSEP -->
+<div class="projects-container-wrapper">
+
+    <div class="project-card">
+
+        <h3 class="project-name">
+            NTDC Transmission System Expansion Plan (TSEP)
+        </h3>
+
+        <p class="project-type">
+            Course-Based Research | Power Systems Planning
+        </p>
+
+        <p class="project-description">
+            Analyzed renewable energy integration challenges in
+            Pakistan’s transmission network, focusing on voltage
+            stability, reactive power compensation, transmission
+            capacity, and N-1 reliability. The analysis considered
+            solutions including 500 kV transmission lines, STATCOMs,
+            synchronous condensers, energy storage, and smart-grid
+            technologies to strengthen grid reliability and
+            operational flexibility.
+        </p>
+
+        <a href="https://www.linkedin.com/posts/muhammad-sammir-jamal-1a7b0127a_tsep-analysis-activity-7394096042352214016-geUo"
+           target="_blank"
+           class="linkedin-btn">
+            View Full Presentation
+        </a>
+
+        <div class="tech-tag-container">
+            <span class="tech-tag">NTDC</span>
+            <span class="tech-tag">Renewables</span>
+            <span class="tech-tag">Grid Planning</span>
+            <span class="tech-tag">STATCOM</span>
+            <span class="tech-tag">N-1 Reliability</span>
+        </div>
+
+    </div>
+
+
+    <!-- NEPRA -->
+    <div class="project-card">
+
+        <h3 class="project-name">
+            NEPRA 2024 Performance Evaluation
+        </h3>
+
+        <p class="project-type">
+            Course-Based Research | Regulatory & Grid Analysis
+        </p>
+
+        <p class="project-description">
+            Evaluated Pakistan’s transmission network challenges,
+            including overloaded corridors, weak voltage regulation,
+            and infrastructure delays. The analysis proposed series
+            compensation, transmission-grid reinforcement, and
+            improved load evacuation to enhance system stability,
+            power-transfer capability, and overall operational
+            efficiency.
+        </p>
+
+        <a href="https://www.linkedin.com/posts/muhammad-sammir-jamal-1a7b0127a_nepra-ntdc-performance-evaluation-activity-7408222257421938688-MnCD"
+           target="_blank"
+           class="linkedin-btn">
+            View Full Presentation
+        </a>
+
+        <div class="tech-tag-container">
+            <span class="tech-tag">NEPRA</span>
+            <span class="tech-tag">NTDC</span>
+            <span class="tech-tag">Grid Congestion</span>
+            <span class="tech-tag">Voltage Stability</span>
+            <span class="tech-tag">Transmission Planning</span>
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- Explore More -->
 <div class="explore-more-container">
-    <button class="explore-more-btn" onclick="scrollToNav()">Explore More</button>
+    <button class="explore-more-btn" onclick="scrollToNav()">
+        Explore More
+    </button>
 </div>
-</section>
 
+</section>
 <!-- Add the following CSS for the buttons -->
 <style>
     .linkedin-btn {
@@ -1625,11 +1869,12 @@ hr, .separator, .line {
 </div>
 </section>
 </section>
-        <section class="dynamic-section" id="experience" data-dynamic="true">
-            <div class="projects-header">
-                <h1 class="projects-title">Professional Experience</h1>
-                <h2 class="projects-subtitle">Roles & Internships</h2>
-            </div>
+   <section class="dynamic-section" id="experience" data-dynamic="true">
+
+    <div class="projects-header" style="text-align: center;">
+        <h1 class="projects-title">Professional Experience</h1>
+        <h2 class="projects-subtitle">Roles & Internships</h2>
+    </div>
 
             <div class="projects-container-wrapper">
 
